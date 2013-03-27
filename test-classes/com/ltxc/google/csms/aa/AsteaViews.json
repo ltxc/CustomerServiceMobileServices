@@ -1,0 +1,19 @@
+
+1. Repair Info
+http://127.0.0.1:8888/rest/views/repairinfo?request_id=RP1302110049
+http://srv-tpgen-nor.ltx-credence.com/csmobile/rest/views/repairinfo?request_id=RP1302110049
+
+
+
+    {
+       "viewRepairInfo":
+       {
+           "cconth_id": "AP120626-01",
+           "dest_warehouse_id": "A-CLARK",
+           "id": "345",
+           "pcode_id": "CS-DIAG",
+           "priority": "1",
+           "request_id": "RP1302110049"
+       }
+    }
+

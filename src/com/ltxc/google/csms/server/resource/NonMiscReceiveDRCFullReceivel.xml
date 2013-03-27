@@ -1,0 +1,1 @@
+<row number="1"><inv_type_id>%{inv_type_id}</inv_type_id><bin_code_id>%{bin_code_id}</bin_code_id><qty_received>%{qty}</qty_received><ldmnd_stat_id>900</ldmnd_stat_id><bo_search_keys><item><name>orig_doc_line_id</name><value>%{origdoclineid}</value></item></bo_search_keys></row>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="1.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
+	<persistence-unit name="CSMobile" transaction-type="RESOURCE_LOCAL">
+		<description>Translator Schema</description>
+		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+		<exclude-unlisted-classes>false</exclude-unlisted-classes>
+		<properties>
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://srv-ghd-nor.ltx-credence.com:3306/CSMobile"/>
+			<property name="javax.persistence.jdbc.user" value="FP"/>
+			<property name="javax.persistence.jdbc.password" value="FP"/>
+			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+			<property name="eclipselink.query-results-cache" value="false"/>
+		</properties>
+	</persistence-unit>	
+		<persistence-unit name="Astea" transaction-type="RESOURCE_LOCAL">
+		<description>Astea Alliance DB</description>
+		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+		<mapping-file>META-INF/orm.xml</mapping-file>
+
+		<exclude-unlisted-classes>false</exclude-unlisted-classes>
+		<properties>
+			<property name="javax.persistence.jdbc.url" value="jdbc:jtds:sqlserver://srv-aadb-nor.ltx-credence.com/SALTX"/>
+			<property name="javax.persistence.jdbc.user" value="AsteaMobile"/>
+			<property name="javax.persistence.jdbc.password" value="x"/>
+			<property name="javax.persistence.jdbc.driver" value="net.sourceforge.jtds.jdbc.Driver"/>
+			<property name="eclipselink.query-results-cache" value="false"/>
+		</properties>
+	</persistence-unit>	
+</persistence>

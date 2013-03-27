@@ -1,0 +1,17 @@
+<state bc_name="vendor_return">
+<action name="data">
+<main>
+<row number="1">
+<ref_doc_type status="0" len="30">2</ref_doc_type>
+<ref_doc_id status="8" len="30">%{orig_doc_id}</ref_doc_id>
+<approved_by>%{shipped_by}</approved_by>
+<approved_dt>%{created_date}</approved_dt> 
+<to_vendor_id status="8" len="30">%{target_value}</to_vendor_id>
+<fr_warehouse_id status="8">%{fr_warehouse_id}</fr_warehouse_id>
+<is_generate_debit>N</is_generate_debit>
+<ldmnd_stat_id>70</ldmnd_stat_id>
+<rb_return_reason>1</rb_return_reason>
+</row>
+</main>
+</action>
+</state>

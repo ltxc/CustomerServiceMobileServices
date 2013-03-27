@@ -1,0 +1,64 @@
+http://srv-tpgen-nor.ltx-credence.com/csmobile/rest/inventory/load
+
+    {
+       "carrier":
+       {
+           "carrier_id": "DHL",
+           "id": "57",
+           "last_change_date": "2007-02-21T10:51:08-08:00",
+           "version": "0"
+       },
+       "carrier_refno": "987654321",
+       "company":
+       {
+           "company_id": "LTXSJ",
+           "id": "87",
+           "last_change_date": "2011-11-11T10:40:09-08:00",
+           "version": "0"
+       },
+       "created_by": "BMORENO",
+       "created_date": "2012-11-14T14:55:09-08:00",
+       "id": "38",
+       "inventoryLineItems":
+       {
+           "bin_code_id": "43F",
+           "bpart_id": "956-0133-00",
+           "id": "38",
+           "inv_type_id": "good",
+           "lineitemnumber": "0",
+           "man_adj_reason_id": "MISC",
+           "qty": "5.0",
+           "version": "0"
+       },
+       "ipad_id": "jasperipad_1",
+       "no_of_packages": "0",
+       "process_date": "2012-11-14T14:55:11-08:00",
+       "process_message": "RC1211140007",
+       "process_status": "COMPLETED",
+       "sender_refno": "PO8397",
+       "to_warehouse":
+       {
+           "descr": "A-Milpitas Logistics Warehouse",
+           "id": "8",
+           "version": "0",
+           "warehouse_id": "A-SAN-JOSE"
+       },
+       "transaction_type": "MRC",
+       "version": "0",
+       "weight": "0.0"
+    }
+
+
+result:
+
+
+
+    {
+       "process_date": "2012-11-14T16:06:24-05:00",
+       "process_message": "RC1211140008",
+       "process_status": "COMPLETED",
+       "transactionId": "jasperipad_2",
+       "transactionType": "MRC"
+    }
+
+

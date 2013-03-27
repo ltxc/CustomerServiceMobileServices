@@ -1,0 +1,1 @@
+<row number='%{lineitemno}'><our_bpart_id>%{bpart_id}</our_bpart_id><serial_no>%{serial_no}</serial_no><qty_received>%{qty}</qty_received><man_adj_reason_id>%{man_adj_reason_id}</man_adj_reason_id><inv_type_id status='0' len='30'>%{inv_type_id}</inv_type_id><bin_code_id status='0' len='30'>%{bin_code_id}</bin_code_id></row>

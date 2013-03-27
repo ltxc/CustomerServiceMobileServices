@@ -1,0 +1,105 @@
+
+http://127.0.0.1:8888/rest/synch/shipmentinstructions
+http://srv-tpgen-nor.ltx-credence.com/csmobile/rest/synch/shipmentinstructions
+{
+   "shipmentInstructions":
+   [
+       {
+           "ap_description": "From Sing: Customer to arrange collection with DGF",
+           "ap_table_key": "1003-000001",
+           "ap_table_name": "cust",
+           "id": "1",
+           "lastupdated": "2013-02-14T17:39:36-08:00",
+           "version": "1"
+       },
+       {
+           "ap_description": "FedEx Collect",
+           "ap_table_key": "1003-000012",
+           "ap_table_name": "cust",
+           "id": "2",
+           "lastupdated": "2013-02-14T17:39:36-08:00",
+           "version": "1"
+       },
+       {
+           "ap_description": "From Sing: < 30 kgs, use Yen Loong. >30 kgs, use THAM OR YENLONG WHICHEVER IS CHEAPER",
+           "ap_table_key": "1003-001060",
+           "ap_table_name": "cust",
+           "id": "3",
+           "lastupdated": "2013-02-14T17:39:36-08:00",
+           "version": "1"
+       },
+       {
+           "ap_description": "From US: < 20kgs, use DHL acct 960114175 (BILLABLE PO ONLY)",
+           "ap_table_key": "1003-001060",
+           "ap_table_name": "cust",
+           "id": "4",
+           "lastupdated": "2013-02-14T17:39:36-08:00",
+           "version": "1"
+       },
+       {
+           "ap_description": "From US: > 20kgs, use CEVA Logistics (BILLABLE PO ONLY)",
+           "ap_table_key": "1003-001060",
+           "ap_table_name": "cust",
+           "id": "5",
+           "lastupdated": "2013-02-14T17:39:36-08:00",
+           "version": "1"
+       },
+       {
+           "ap_description": "From US: contact Tom Peterson (512) 6022523 (BILLABLE PO ONLY)",
+           "ap_table_key": "1003-001060",
+           "ap_table_name": "cust",
+           "id": "6",
+           "lastupdated": "2013-02-14T17:39:36-08:00",
+           "version": "1"
+       },
+       {
+           "ap_description": "From US: Use LTXC own carrier (we pay)",
+           "ap_table_key": "1003-001060",
+           "ap_table_name": "cust",
+           "id": "7",
+           "lastupdated": "2013-02-14T17:39:36-08:00",
+           "version": "1"
+       },
+       {
+           "ap_description": "From Sing:>20kgs, use Forecom (email:Memi@forcom.com for booking)",
+           "ap_table_key": "1003-001718",
+           "ap_table_name": "cust",
+           "id": "8",
+           "lastupdated": "2013-02-14T17:39:36-08:00",
+           "version": "1"
+       },
+       {
+           "ap_description": "From Overseas: Ceva Logistics, Shipment more than 20KGS",
+           "ap_table_key": "1003-001718",
+           "ap_table_name": "cust",
+           "id": "9",
+           "lastupdated": "2013-02-14T17:39:36-08:00",
+           "version": "1"
+       },
+       {
+           "ap_description": "From Overseas: DHL 961274597,Shipment less than 20KGS",
+           "ap_table_key": "1003-001718",
+           "ap_table_name": "cust",
+           "id": "10",
+           "lastupdated": "2013-02-14T17:39:36-08:00",
+           "version": "1"
+       },
+       {
+           "ap_description": "From Sing:<20kgs,use DHL 961274597",
+           "ap_table_key": "1003-001718",
+           "ap_table_name": "cust",
+           "id": "11",
+           "lastupdated": "2013-02-14T17:39:36-08:00",
+           "version": "1"
+       },
+       {
+           "ap_description": "From Sing: < 65kgs, use Fedex third party acct # 213109065",
+           "ap_table_key": "1004-002093",
+           "ap_table_name": "cust",
+           "id": "12",
+           "lastupdated": "2013-02-14T17:39:36-08:00",
+           "version": "1"
+       }
+      ]
+  }
+       

@@ -1,0 +1,68 @@
+http://srv-tpgen-nor.ltx-credence.com/csmobile/rest/synch/warehouse/0/0
+http://srv-tpgen-nor.ltx-credence.com/csmobile/rest/synch/warehouse?firstresult=0&maxresult=0
+    {
+       "warehouse":
+       [
+           {
+               "descr": "A-CRC Laguna Warehouse",
+               "id": "1",
+               "version": "0",
+               "warehouse_id": "A-CRC-LAGUNA"
+           },
+           {
+               "descr": "A-CRC-Singapore Warehouse",
+               "id": "2",
+               "version": "0",
+               "warehouse_id": "A-CRC-SINGAPORE"
+           },
+           {
+               "descr": "A-Japan Logistics Warehouse",
+               "id": "3",
+               "version": "0",
+               "warehouse_id": "A-JAPAN"
+           },
+           {
+               "descr": "A-Munich Logistics Warehouse",
+               "id": "4",
+               "version": "0",
+               "warehouse_id": "A-MUNICH"
+           },
+           {
+               "descr": "A-Norwood Logistics Warehouse",
+               "id": "5",
+               "version": "0",
+               "warehouse_id": "A-NORWOOD"
+           },
+           {
+               "descr": "A-Philippines Logistics Warehouse",
+               "id": "6",
+               "version": "0",
+               "warehouse_id": "A-PHILIPPINES"
+           },
+           {
+               "descr": "A-Richardson Logistics Warehouse",
+               "id": "7",
+               "version": "0",
+               "warehouse_id": "A-RICHARDSON"
+           },
+           {
+               "descr": "A-Milpitas Logistics Warehouse",
+               "id": "8",
+               "version": "0",
+               "warehouse_id": "A-SAN-JOSE"
+           },
+           {
+               "descr": "A-Singapore Logistics Warehouse",
+               "id": "9",
+               "version": "0",
+               "warehouse_id": "A-SINGAPORE"
+           },
+           {
+               "descr": "AVBA Israel Warehouse",
+               "id": "10",
+               "version": "0",
+               "warehouse_id": "AVBA-ISRAEL"
+           }
+       ]
+    }
+

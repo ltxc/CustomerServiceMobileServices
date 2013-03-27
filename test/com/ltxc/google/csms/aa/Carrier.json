@@ -1,0 +1,428 @@
+http://srv-tpgen-nor.ltx-credence.com/csmobile/rest/synch/carrier/0/0
+http://srv-tpgen-nor.ltx-credence.com/csmobile/rest/synch/Carrier?firstresult=0&maxresult=0
+    {
+       "carrier":
+       [
+           {
+               "carrier_id": "UPS",
+               "id": "1",
+               "last_change_date": "1999-07-27T00:00:00-07:00",
+               "version": "0"
+           },
+           {
+               "carrier_id": "WILL_CALL",
+               "id": "2",
+               "last_change_date": "1999-11-09T00:00:00-08:00",
+               "version": "0"
+           },
+           {
+               "carrier_id": "AS_ROUTED",
+               "id": "3",
+               "last_change_date": "1999-11-28T00:00:00-08:00",
+               "version": "0"
+           },
+           {
+               "carrier_id": "BESTWAY_COLLECT",
+               "id": "4",
+               "last_change_date": "1999-11-28T00:00:00-08:00",
+               "version": "0"
+           },
+           {
+               "carrier_id": "BESTWAY_PREPAID",
+               "id": "5",
+               "last_change_date": "1999-11-28T00:00:00-08:00",
+               "version": "0"
+           },
+           {
+               "carrier_id": "U-FREIGHT",
+               "id": "6",
+               "last_change_date": "1999-11-28T00:00:00-08:00",
+               "version": "0"
+           },
+           {
+               "carrier_id": "WORLD_COURIER",
+               "id": "7",
+               "last_change_date": "1999-11-28T00:00:00-08:00",
+               "version": "0"
+           },
+           {
+               "carrier_id": "AEI",
+               "id": "8",
+               "last_change_date": "1999-12-03T17:04:24-08:00",
+               "version": "0"
+           },
+           {
+               "carrier_id": "ALROD",
+               "id": "9",
+               "last_change_date": "1999-12-03T17:04:24-08:00",
+               "version": "0"
+           },
+           {
+               "carrier_id": "BAX_GLOBAL",
+               "id": "10",
+               "last_change_date": "1999-12-03T17:05:29-08:00",
+               "version": "0"
+           },
+           {
+               "carrier_id": "BDP",
+               "id": "11",
+               "last_change_date": "1999-12-03T17:05:42-08:00",
+               "version": "0"
+           },
+           {
+               "carrier_id": "BEN_AIR",
+               "id": "12",
+               "last_change_date": "1999-12-03T17:06:05-08:00",
+               "version": "0"
+           },
+           {
+               "carrier_id": "SCHENKER",
+               "id": "13",
+               "last_change_date": "1999-12-03T17:06:33-08:00",
+               "version": "0"
+           },
+           {
+               "carrier_id": "CARGOWORLD",
+               "id": "14",
+               "last_change_date": "1999-12-03T17:07:18-08:00",
+               "version": "0"
+           },
+           {
+               "carrier_id": "CO-TEAM",
+               "id": "15",
+               "last_change_date": "1999-12-03T17:07:53-08:00",
+               "version": "0"
+           },
+           {
+               "carrier_id": "FAF-FLYING",
+               "id": "16",
+               "last_change_date": "1999-12-03T17:08:39-08:00",
+               "version": "0"
+           },
+           {
+               "carrier_id": "FRITZ",
+               "id": "17",
+               "last_change_date": "1999-12-03T17:08:55-08:00",
+               "version": "0"
+           },
+           {
+               "carrier_id": "GLOBAL_AIR",
+               "id": "18",
+               "last_change_date": "1999-12-03T17:09:15-08:00",
+               "version": "0"
+           },
+           {
+               "carrier_id": "GRIFFIN_KINETIC",
+               "id": "19",
+               "last_change_date": "1999-12-03T17:09:50-08:00",
+               "version": "0"
+           },
+           {
+               "carrier_id": "HALLEYS",
+               "id": "20",
+               "last_change_date": "1999-12-03T17:12:30-08:00",
+               "version": "0"
+           },
+           {
+               "carrier_id": "MORRISON",
+               "id": "21",
+               "last_change_date": "1999-12-03T17:13:41-08:00",
+               "version": "0"
+           },
+           {
+               "carrier_id": "PORTLINK",
+               "id": "22",
+               "last_change_date": "1999-12-03T17:14:40-08:00",
+               "version": "0"
+           },
+           {
+               "carrier_id": "SMAC",
+               "id": "23",
+               "last_change_date": "1999-12-03T17:15:55-08:00",
+               "version": "0"
+           },
+           {
+               "carrier_id": "SPEEDMARK",
+               "id": "24",
+               "last_change_date": "1999-12-03T17:16:13-08:00",
+               "version": "0"
+           },
+           {
+               "carrier_id": "TFS_LINE",
+               "id": "25",
+               "last_change_date": "1999-12-03T17:16:35-08:00",
+               "version": "0"
+           },
+           {
+               "carrier_id": "TNT",
+               "id": "26",
+               "last_change_date": "1999-12-03T17:16:45-08:00",
+               "version": "0"
+           },
+           {
+               "carrier_id": "HAND_CARRY",
+               "id": "27",
+               "last_change_date": "1999-12-23T13:14:14-08:00",
+               "version": "0"
+           },
+           {
+               "carrier_id": "SELFCOLLECT",
+               "id": "28",
+               "last_change_date": "2000-01-20T04:12:36-08:00",
+               "version": "0"
+           },
+           {
+               "carrier_id": "TRANSOCEAN",
+               "id": "29",
+               "last_change_date": "2000-07-03T22:16:57-07:00",
+               "version": "0"
+           },
+           {
+               "carrier_id": "ZHANBEE",
+               "id": "30",
+               "last_change_date": "2001-08-13T04:52:31-07:00",
+               "version": "0"
+           },
+           {
+               "carrier_id": "HANKYU",
+               "id": "31",
+               "last_change_date": "2001-08-13T04:56:28-07:00",
+               "version": "0"
+           },
+           {
+               "carrier_id": "GEO_LOGISTICS",
+               "id": "32",
+               "last_change_date": "2001-08-13T04:58:40-07:00",
+               "version": "0"
+           },
+           {
+               "carrier_id": "NIPPON_EXPRESS",
+               "id": "33",
+               "last_change_date": "2001-08-13T04:59:59-07:00",
+               "version": "0"
+           },
+           {
+               "carrier_id": "BATAM_LOGISTICS",
+               "id": "34",
+               "last_change_date": "2001-08-13T05:05:31-07:00",
+               "version": "0"
+           },
+           {
+               "carrier_id": "TPC_EXP",
+               "id": "35",
+               "last_change_date": "2001-09-05T04:31:08-07:00",
+               "version": "0"
+           },
+           {
+               "carrier_id": "UCP",
+               "id": "36",
+               "last_change_date": "2002-01-06T20:07:07-08:00",
+               "version": "0"
+           },
+           {
+               "carrier_id": "KWE",
+               "id": "37",
+               "last_change_date": "2002-06-30T23:12:45-07:00",
+               "version": "0"
+           },
+           {
+               "carrier_id": "EXPEDITORS",
+               "id": "38",
+               "last_change_date": "2002-07-02T22:11:20-07:00",
+               "version": "0"
+           },
+           {
+               "carrier_id": "AIRMARK_FREIGHT",
+               "id": "39",
+               "last_change_date": "2002-07-24T21:12:44-07:00",
+               "version": "0"
+           },
+           {
+               "carrier_id": "AIRBORNE_EXPRESS",
+               "id": "40",
+               "last_change_date": "2002-08-27T03:58:51-07:00",
+               "version": "0"
+           },
+           {
+               "carrier_id": "EAS",
+               "id": "41",
+               "last_change_date": "2002-12-11T03:10:45-08:00",
+               "version": "0"
+           },
+           {
+               "carrier_id": "KWE_TRUCK",
+               "id": "42",
+               "last_change_date": "2002-12-11T03:11:24-08:00",
+               "version": "0"
+           },
+           {
+               "carrier_id": "DIMERCO",
+               "id": "43",
+               "last_change_date": "2002-12-11T03:12:35-08:00",
+               "version": "0"
+           },
+           {
+               "carrier_id": "OWN_TRANSPORT",
+               "id": "44",
+               "last_change_date": "2002-12-11T03:13:12-08:00",
+               "version": "0"
+           },
+           {
+               "carrier_id": "SECURIFORCE",
+               "id": "45",
+               "last_change_date": "2002-12-18T01:47:14-08:00",
+               "version": "0"
+           },
+           {
+               "carrier_id": "HANSHIN",
+               "id": "46",
+               "last_change_date": "2004-08-11T00:10:40-07:00",
+               "version": "0"
+           },
+           {
+               "carrier_id": "ASPAC",
+               "id": "47",
+               "last_change_date": "2004-08-11T02:03:35-07:00",
+               "version": "0"
+           },
+           {
+               "carrier_id": "JARDINE",
+               "id": "48",
+               "last_change_date": "2004-08-12T01:07:33-07:00",
+               "version": "0"
+           },
+           {
+               "carrier_id": "YEN_LONG_PN_SHIPPING",
+               "id": "49",
+               "last_change_date": "2004-10-20T03:02:41-07:00",
+               "version": "0"
+           },
+           {
+               "carrier_id": "YEN_LONG",
+               "id": "50",
+               "last_change_date": "2004-10-20T04:07:05-07:00",
+               "version": "0"
+           },
+           {
+               "carrier_id": "YEN_LONG_SECURIFORCE_FOB",
+               "id": "51",
+               "last_change_date": "2004-11-03T22:59:21-08:00",
+               "version": "0"
+           },
+           {
+               "carrier_id": "BAX_TRUCK",
+               "id": "52",
+               "last_change_date": "2005-02-24T03:04:31-08:00",
+               "version": "0"
+           },
+           {
+               "carrier_id": "AIRPAK",
+               "id": "53",
+               "last_change_date": "2006-05-11T04:37:59-07:00",
+               "version": "0"
+           },
+           {
+               "carrier_id": "DHL_Global_Forwarding",
+               "id": "54",
+               "last_change_date": "2006-06-15T04:00:56-07:00",
+               "version": "0"
+           },
+           {
+               "carrier_id": "KUEHNE_NAGEL",
+               "id": "55",
+               "last_change_date": "2006-12-15T23:21:49-08:00",
+               "version": "0"
+           },
+           {
+               "carrier_id": "CUSTOMER_W/C",
+               "id": "56",
+               "last_change_date": "2007-02-05T16:01:34-08:00",
+               "version": "0"
+           },
+           {
+               "carrier_id": "DHL",
+               "id": "57",
+               "last_change_date": "2007-02-21T10:51:08-08:00",
+               "version": "0"
+           },
+           {
+               "carrier_id": "FEDEX",
+               "id": "58",
+               "last_change_date": "2007-02-21T10:51:08-08:00",
+               "version": "0"
+           },
+           {
+               "carrier_id": "EGL",
+               "id": "59",
+               "last_change_date": "2007-08-16T06:56:18-07:00",
+               "version": "0"
+           },
+           {
+               "carrier_id": "PROLOG",
+               "id": "60",
+               "last_change_date": "2010-09-27T20:53:40-07:00",
+               "version": "0"
+           },
+           {
+               "carrier_id": "2GO",
+               "id": "61",
+               "last_change_date": "2012-09-17T05:15:34-07:00",
+               "version": "0"
+           },
+           {
+               "carrier_id": "ACE_EXPRESS",
+               "id": "62",
+               "last_change_date": "2012-09-17T05:15:34-07:00",
+               "version": "0"
+           },
+           {
+               "carrier_id": "AIR21",
+               "id": "63",
+               "last_change_date": "2012-09-17T05:15:34-07:00",
+               "version": "0"
+           },
+           {
+               "carrier_id": "FORCOM",
+               "id": "64",
+               "last_change_date": "2012-09-17T05:15:34-07:00",
+               "version": "0"
+           },
+           {
+               "carrier_id": "JAVELIN_LOGISTICS",
+               "id": "65",
+               "last_change_date": "2012-09-17T05:15:34-07:00",
+               "version": "0"
+           },
+           {
+               "carrier_id": "JSI_LOGISTICS",
+               "id": "66",
+               "last_change_date": "2012-09-17T05:15:34-07:00",
+               "version": "0"
+           },
+           {
+               "carrier_id": "THAM",
+               "id": "67",
+               "last_change_date": "2012-09-17T05:15:34-07:00",
+               "version": "0"
+           },
+           {
+               "carrier_id": "THAM_TEE_HAI",
+               "id": "68",
+               "last_change_date": "2012-09-17T05:15:34-07:00",
+               "version": "0"
+           },
+           {
+               "carrier_id": "TRANSPLACE",
+               "id": "69",
+               "last_change_date": "2012-09-17T05:15:34-07:00",
+               "version": "0"
+           },
+           {
+               "carrier_id": "CCS_EXPRESS",
+               "id": "70",
+               "last_change_date": "2012-09-17T21:21:07-07:00",
+               "version": "0"
+           }
+       ]
+    }
+

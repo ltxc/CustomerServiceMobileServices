@@ -1,0 +1,382 @@
+ http://127.0.0.1:8888/rest/synch/cyclecountmaster?warehouseid=A-SAN-JOSE
+  http://srv-tpgen-nor.ltx-credence.com/csmobile/rest/synch/cyclecountmaster?warehouseid=A-SAN-JOSE
+ 
+ 
+
+    {
+       "cycleCountMaster":
+       [
+           {
+               "assigneddate": "2013-01-08T17:51:30-05:00",
+               "binCodeId": "04B",
+               "bpartId": " ",
+               "cycleType": "BIN",
+               "id": "2471"
+           },
+           {
+               "assigneddate": "2013-01-08T17:51:30-05:00",
+               "binCodeId": "04C",
+               "bpartId": " ",
+               "cycleType": "BIN",
+               "id": "2472"
+           },
+           {
+               "assigneddate": "2013-01-08T17:51:30-05:00",
+               "binCodeId": "04D",
+               "bpartId": " ",
+               "cycleType": "BIN",
+               "id": "2473"
+           },
+           {
+               "assigneddate": "2013-01-08T17:51:30-05:00",
+               "binCodeId": "05B",
+               "bpartId": " ",
+               "cycleType": "BIN",
+               "id": "2474"
+           },
+           {
+               "assigneddate": "2013-01-07T00:00:00-05:00",
+               "binCodeId": "05C",
+               "bpartId": " ",
+               "cycleType": "BIN",
+               "id": "2475"
+           },
+           {
+               "assigneddate": "2013-01-07T00:00:00-05:00",
+               "binCodeId": "05D",
+               "bpartId": " ",
+               "cycleType": "BIN",
+               "id": "2476"
+           },
+           {
+               "assigneddate": "2013-01-07T00:00:00-05:00",
+               "binCodeId": "06B",
+               "bpartId": " ",
+               "cycleType": "BIN",
+               "id": "2477"
+           },
+           {
+               "assigneddate": "2013-01-07T00:00:00-05:00",
+               "binCodeId": "06C",
+               "bpartId": " ",
+               "cycleType": "BIN",
+               "id": "2478"
+           },
+           {
+               "assigneddate": "2013-01-07T00:00:00-05:00",
+               "binCodeId": "06D",
+               "bpartId": " ",
+               "cycleType": "BIN",
+               "id": "2479"
+           },
+           {
+               "assigneddate": "2013-01-07T00:00:00-05:00",
+               "binCodeId": "07B",
+               "bpartId": " ",
+               "cycleType": "BIN",
+               "id": "2480"
+           },
+           {
+               "assigneddate": "2013-01-07T00:00:00-05:00",
+               "binCodeId": "07C",
+               "bpartId": " ",
+               "cycleType": "BIN",
+               "id": "2481"
+           },
+           {
+               "assigneddate": "2013-01-07T00:00:00-05:00",
+               "binCodeId": "07D",
+               "bpartId": " ",
+               "cycleType": "BIN",
+               "id": "2482"
+           },
+           {
+               "assigneddate": "2013-01-07T00:00:00-05:00",
+               "binCodeId": "08B",
+               "bpartId": " ",
+               "cycleType": "BIN",
+               "id": "2483"
+           },
+           {
+               "assigneddate": "2013-01-07T00:00:00-05:00",
+               "binCodeId": "08C",
+               "bpartId": " ",
+               "cycleType": "BIN",
+               "id": "2484"
+           },
+           {
+               "assigneddate": "2013-01-07T00:00:00-05:00",
+               "binCodeId": "08D",
+               "bpartId": " ",
+               "cycleType": "BIN",
+               "id": "2485"
+           },
+           {
+               "assigneddate": "2013-01-07T00:00:00-05:00",
+               "binCodeId": "09B",
+               "bpartId": " ",
+               "cycleType": "BIN",
+               "id": "2486"
+           },
+           {
+               "assigneddate": "2013-01-07T00:00:00-05:00",
+               "binCodeId": "09C",
+               "bpartId": " ",
+               "cycleType": "BIN",
+               "id": "2487"
+           },
+           {
+               "assigneddate": "2013-01-07T00:00:00-05:00",
+               "binCodeId": "09D",
+               "bpartId": " ",
+               "cycleType": "BIN",
+               "id": "2488"
+           },
+           {
+               "assigneddate": "2013-01-07T00:00:00-05:00",
+               "binCodeId": "100A",
+               "bpartId": " ",
+               "cycleType": "BIN",
+               "id": "2489"
+           },
+           {
+               "assigneddate": "2013-01-07T00:00:00-05:00",
+               "binCodeId": "100B",
+               "bpartId": " ",
+               "cycleType": "BIN",
+               "id": "2490"
+           },
+           {
+               "assigneddate": "2013-01-07T00:00:00-05:00",
+               "binCodeId": "101A",
+               "bpartId": " ",
+               "cycleType": "BIN",
+               "id": "2491"
+           },
+           {
+               "assigneddate": "2013-01-07T00:00:00-05:00",
+               "binCodeId": "101B",
+               "bpartId": " ",
+               "cycleType": "BIN",
+               "id": "2492"
+           },
+           {
+               "assigneddate": "2013-01-07T00:00:00-05:00",
+               "binCodeId": "101C",
+               "bpartId": " ",
+               "cycleType": "BIN",
+               "id": "2493"
+           },
+           {
+               "assigneddate": "2013-01-07T00:00:00-05:00",
+               "binCodeId": "102A",
+               "bpartId": " ",
+               "cycleType": "BIN",
+               "id": "2494"
+           },
+           {
+               "assigneddate": "2013-01-07T00:00:00-05:00",
+               "binCodeId": "102B",
+               "bpartId": " ",
+               "cycleType": "BIN",
+               "id": "2495"
+           },
+           {
+               "assigneddate": "2013-01-07T00:00:00-05:00",
+               "binCodeId": "102C",
+               "bpartId": " ",
+               "cycleType": "BIN",
+               "id": "2496"
+           },
+           {
+               "assigneddate": "2013-01-07T00:00:00-05:00",
+               "binCodeId": "103A",
+               "bpartId": " ",
+               "cycleType": "BIN",
+               "id": "2497"
+           },
+           {
+               "assigneddate": "2013-01-07T00:00:00-05:00",
+               "binCodeId": "103B",
+               "bpartId": " ",
+               "cycleType": "BIN",
+               "id": "2498"
+           },
+           {
+               "assigneddate": "2013-01-07T00:00:00-05:00",
+               "binCodeId": "103C",
+               "bpartId": " ",
+               "cycleType": "BIN",
+               "id": "2499"
+           },
+           {
+               "assigneddate": "2013-01-07T00:00:00-05:00",
+               "binCodeId": "104A",
+               "bpartId": " ",
+               "cycleType": "BIN",
+               "id": "2500"
+           },
+           {
+               "assigneddate": "2013-01-07T00:00:00-05:00",
+               "binCodeId": "104B",
+               "bpartId": " ",
+               "cycleType": "BIN",
+               "id": "2501"
+           },
+           {
+               "assigneddate": "2013-01-07T00:00:00-05:00",
+               "binCodeId": "104C",
+               "bpartId": " ",
+               "cycleType": "BIN",
+               "id": "2502"
+           },
+           {
+               "assigneddate": "2013-01-07T00:00:00-05:00",
+               "binCodeId": "105A",
+               "bpartId": " ",
+               "cycleType": "BIN",
+               "id": "2503"
+           },
+           {
+               "assigneddate": "2013-01-07T00:00:00-05:00",
+               "binCodeId": "105B",
+               "bpartId": " ",
+               "cycleType": "BIN",
+               "id": "2504"
+           },
+           {
+               "assigneddate": "2013-01-08T00:00:00-05:00",
+               "binCodeId": "105C",
+               "bpartId": " ",
+               "cycleType": "BIN",
+               "id": "2505"
+           },
+           {
+               "assigneddate": "2013-01-08T00:00:00-05:00",
+               "binCodeId": "106A",
+               "bpartId": " ",
+               "cycleType": "BIN",
+               "id": "2506"
+           },
+           {
+               "assigneddate": "2013-01-08T00:00:00-05:00",
+               "binCodeId": "B2-B14",
+               "bpartId": "09909634-00",
+               "cycleType": "PART",
+               "id": "29724"
+           },
+           {
+               "assigneddate": "2013-01-08T00:00:00-05:00",
+               "binCodeId": "B3-B21",
+               "bpartId": "05907406-00",
+               "cycleType": "PART",
+               "id": "29725"
+           },
+           {
+               "assigneddate": "2013-01-08T00:00:00-05:00",
+               "binCodeId": "2702",
+               "bpartId": "05907406-00",
+               "cycleType": "PART",
+               "id": "29723"
+           },
+           {
+               "assigneddate": "2013-01-08T00:00:00-05:00",
+               "binCodeId": "1602",
+               "bpartId": "05907378-00",
+               "cycleType": "PART",
+               "id": "29719"
+           },
+           {
+               "assigneddate": "2013-01-08T00:00:00-05:00",
+               "binCodeId": "199F",
+               "bpartId": "09909590-02",
+               "cycleType": "PART",
+               "id": "29720"
+           },
+           {
+               "assigneddate": "2013-01-08T00:00:00-05:00",
+               "binCodeId": "A2-B9",
+               "bpartId": "020-0023-263",
+               "cycleType": "PART",
+               "id": "29721"
+           },
+           {
+               "assigneddate": "2013-01-08T00:00:00-05:00",
+               "binCodeId": "190E",
+               "bpartId": "0260059-00",
+               "cycleType": "PART",
+               "id": "29722"
+           },
+           {
+               "assigneddate": "2013-01-08T00:00:00-05:00",
+               "binCodeId": "2008",
+               "bpartId": "05907266-00",
+               "cycleType": "PART",
+               "id": "29716"
+           },
+           {
+               "assigneddate": "2013-01-08T00:00:00-05:00",
+               "binCodeId": "B2-B4",
+               "bpartId": "05907266-00",
+               "cycleType": "PART",
+               "id": "29717"
+           },
+           {
+               "assigneddate": "2013-01-08T00:00:00-05:00",
+               "binCodeId": "B4-B16",
+               "bpartId": "020-0023-150",
+               "cycleType": "PART",
+               "id": "29718"
+           },
+           {
+               "assigneddate": "2013-01-08T00:00:00-05:00",
+               "binCodeId": "152C",
+               "bpartId": "09907101-0A",
+               "cycleType": "PART",
+               "id": "29715"
+           },
+           {
+               "assigneddate": "2013-01-08T00:00:00-05:00",
+               "binCodeId": "FLOOR-6",
+               "bpartId": "002-0022-01",
+               "cycleType": "PART",
+               "id": "29714"
+           },
+           {
+               "assigneddate": "2013-01-08T00:00:00-05:00",
+               "binCodeId": "A3-B2",
+               "bpartId": "015-0031-000",
+               "cycleType": "PART",
+               "id": "29713"
+           },
+           {
+               "assigneddate": "2013-01-08T00:00:00-05:00",
+               "binCodeId": "72D",
+               "bpartId": "05907428-00",
+               "cycleType": "PART",
+               "id": "29712"
+           },
+           {
+               "assigneddate": "2013-01-08T00:00:00-05:00",
+               "binCodeId": "146B",
+               "bpartId": "004-5063-00",
+               "cycleType": "PART",
+               "id": "29709"
+           },
+           {
+               "assigneddate": "2013-01-08T00:00:00-05:00",
+               "binCodeId": "189D",
+               "bpartId": "020-0022-292",
+               "cycleType": "PART",
+               "id": "29710"
+           },
+           {
+               "assigneddate": "2013-01-08T00:00:00-05:00",
+               "binCodeId": "2608",
+               "bpartId": "05907428-00",
+               "cycleType": "PART",
+               "id": "29711"
+           }
+       ]
+    }
+

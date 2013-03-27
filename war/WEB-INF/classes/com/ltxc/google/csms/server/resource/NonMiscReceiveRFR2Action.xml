@@ -1,0 +1,2 @@
+<state bc_name="repair_order"><action name="data"><main><row number="1"><order_id dtype="string" in_var="" out_var="">%{outputrefno}</order_id><cust_company_id dtype="string">%{customercompanyid}</cust_company_id><bpart_id>%{bpart_id}</bpart_id><serial_no>%{serial_no}</serial_no>
+<cconth_id>%{cconth_id}</cconth_id><warr_type_id>%{war_type_id}</warr_type_id><node_id>%{node_id}</node_id><dest_warehouse_id>%{dest_warehouse_id}</dest_warehouse_id><po_id>%{po_id}</po_id><priority>%{priority}</priority><pcode_id>%{pcode_id}</pcode_id></row></main></action></state>

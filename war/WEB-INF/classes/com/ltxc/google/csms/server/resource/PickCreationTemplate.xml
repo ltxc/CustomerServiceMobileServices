@@ -1,0 +1,5 @@
+<root xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://astea.com.schema.bc.logistic_sourcing"><session email="" alias="">
+%{vendoraction}
+%{nonlistaction}
+<state bc_name="Pick" use_cache_refresh="False"><action name="declare"><attribute dtype="string" in_var="" out_var="" name="PIKID" value="" /><attribute dtype="string" in_var="" out_var="" name="PKLNID" value="" /></action><action name="getdescrtableex"><attribute in_var="" out_var="PIKID" table_name="pickl" element_name="pickh_id" search_criteria="orig_doc_id= %{search_orig_doc_id} and demand_id = '%{demand_id}'" default_value="" /></action><action name="data"><main><row number="1"><pickh_id in_var="PIKID">in_var</pickh_id><cc_is_print_pick_list dtype="string"><![CDATA[%{isprinting}]]></cc_is_print_pick_list><cc_printer_location dtype="string"><![CDATA[%{printer}]]></cc_printer_location></row></main>
+<pick_lines use_retrieve_limit="true">%{lines}</pick_lines></action></state></session></root>

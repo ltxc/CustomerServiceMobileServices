@@ -1,0 +1,1 @@
+<action name="data"><main><row number="1"><receiveh_id status="0" len="30" in_var="strReceiveHId">in_var</receiveh_id><receive_all>Y</receive_all></row></main><full_receivel>%{drc_close_item}</full_receivel></action>

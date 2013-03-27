@@ -1,0 +1,91 @@
+
+ http://127.0.0.1:8888/rest/cyclecount/bin/jlu/A-SINGAPORE/101A/Y
+ http://srv-tpgen-nor.ltx-credence.com/csmobile/rest/cyclecount/bin/jlu/A-SINGAPORE/101A/Y
+http://127.0.0.1:8888/rest/cyclecount/bin/{who}/{warehouseid}/{bincode}/{clear}
+    {
+       "cycleCountCount":
+       [
+           {
+
+               "target": "865-1627-05",
+               "qty": "2.0"
+           },
+           {
+           	"target": "865-1657-00",
+               "qty": "2.0"
+               
+           }
+        ]
+    }
+    
+    
+    
+  http://127.0.0.1:8888/rest/cyclecount/part/jlu/A-SINGAPORE/101A/865-1657-00/Y
+  http://srv-tpgen-nor.ltx-credence.com/csmobile/rest/cyclecount/part/jlu/A-SINGAPORE/101A/865-1657-00/Y
+  http://127.0.0.1:8888/rest/cyclecount/part/{who}/{warehouseid}/{bincode}/{bpart}/{clear}
+    {
+       "cycleCountCount":
+       [
+           {
+
+               "target": "1234556"
+           },
+           {
+           	
+               "qty": "2.0"
+               
+           }
+        ]
+    }
+    
+    
+    
+    //cycle count post
+    
+    http://127.0.0.1:8888/rest/cyclecount/load
+    http://srv-tpgen-nor.ltx-credence.com/csmobile/rest/cyclecount/load
+    
+    
+    {
+    	"who": "jlu",
+    	"warehouseId":"A-SINGAPORE",
+    	"cycleType":"BIN",
+    	"binCodeId":"101A",
+    	"bpartId":"",
+    	"isclear":"Y",
+       "counts":
+       [
+           {
+
+               "target": "865-1627-05",
+               "qty": "2.0"
+           },
+           {
+           	"target": "865-1657-00",
+               "qty": "2.0"
+               
+           }
+        ]
+    }
+    
+    
+ {
+    	"who": "jlu",
+    	"warehouseId":"A-SINGAPORE",
+    	"cycleType":"PART",
+    	"binCodeId":"101A",
+    	"bpartId":"865-1657-00",
+    	"isclear":"Y",
+       "counts":
+       [
+           {
+
+               "target": "12345567"
+           },
+           {
+           	
+               "qty": "2.0"
+               
+           }
+        ]
+    }

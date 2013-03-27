@@ -1,0 +1,2 @@
+serviceClass: com.ltxc.google.csms.client.GreetingService
+path: 47FFC08F6342B2617147EAB9E970E7CF.gwt.rpc

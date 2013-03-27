@@ -1,0 +1,1 @@
+<row number="%{lineitemno}"><bpart_id dtype="string"><![CDATA[%{bpart_id}]]></bpart_id><serial_no dtype="string"><![CDATA[%{serial_no}]]></serial_no><shipped_qty dtype="string"><![CDATA[1]]></shipped_qty><ldmnd_stat_id dtype="number"><![CDATA[1000]]></ldmnd_stat_id><bo_search_keys><item><name>demand_id</name><value><![CDATA[%{demand_id}]]></value></item></bo_search_keys></row>

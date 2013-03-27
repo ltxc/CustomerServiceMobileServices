@@ -1,0 +1,1 @@
+<state bc_name="pick"><action name="execmacro"><attribute bo_name="main" macro_name="NewBatch" /><attribute dtype="array" value="doc_type_id;demand_id_list;fr_warehouse_id;%{target};picked_by" /><attribute dtype="array" value="%{doc_type_id};%{demand_id_list};%{fr_warehouse_id};%{target_value};%{shipped_by}"/></action></state>

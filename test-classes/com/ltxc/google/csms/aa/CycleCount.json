@@ -1,0 +1,87 @@
+ http://127.0.0.1:8888/rest/synch/cyclecount?warehouseid=A-SINGAPORE
+ 
+ 
+ 
+
+    {
+       "cycleCount":
+       [
+           {
+               "binCodeId": "BS10B",
+               "bpartId": "865-1627-05",
+               "cycleType": "BIN",
+               "id": "649",
+               "lastupdated": "2013-01-03T00:00:00-08:00",
+               "qty": "2.0",
+               "serialNo": " ",
+               "source": "AA1",
+               "version": "0",
+               "warehouseId": "A-SINGAPORE",
+               "who": "SYSTEM"
+           },
+           {
+               "binCodeId": "BS10B",
+               "bpartId": "865-1657-00",
+               "cycleType": "BIN",
+               "id": "650",
+               "lastupdated": "2013-01-03T00:00:00-08:00",
+               "qty": "9.0",
+               "serialNo": " ",
+               "source": "AA1",
+               "version": "0",
+               "warehouseId": "A-SINGAPORE",
+               "who": "SYSTEM"
+           },
+           {
+               "binCodeId": "BS10B",
+               "bpartId": "865-1657-01",
+               "cycleType": "BIN",
+               "id": "651",
+               "lastupdated": "2013-01-03T00:00:00-08:00",
+               "qty": "2.0",
+               "serialNo": " ",
+               "source": "AA1",
+               "version": "0",
+               "warehouseId": "A-SINGAPORE",
+               "who": "SYSTEM"
+           },
+           {
+               "binCodeId": "BS10B",
+               "bpartId": "865-1627-05",
+               "cycleType": "BIN",
+               "id": "655",
+               "lastupdated": "2013-01-03T16:47:30-08:00",
+               "qty": "3.0",
+               "source": "IPAD",
+               "version": "0",
+               "warehouseId": "A-SINGAPORE",
+               "who": "jlu"
+           },
+           {
+               "binCodeId": "BS10B",
+               "bpartId": "865-1657-00",
+               "cycleType": "BIN",
+               "id": "656",
+               "lastupdated": "2013-01-03T16:47:30-08:00",
+               "qty": "3.0",
+               "source": "IPAD",
+               "version": "0",
+               "warehouseId": "A-SINGAPORE",
+               "who": "jlu"
+           },
+           {
+               "binCodeId": "BS10B",
+               "bpartId": "865-1657-01",
+               "cycleType": "BIN",
+               "id": "657",
+               "lastupdated": "2013-01-03T16:47:30-08:00",
+               "qty": "3.0",
+               "source": "IPAD",
+               "version": "0",
+               "warehouseId": "A-SINGAPORE",
+               "who": "jlu"
+           }
+       ]
+    }
+
+ 

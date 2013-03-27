@@ -1,0 +1,1 @@
+<row number="%{lineitemno}"><demand_id dtype="number"><![CDATA[%{demand_id}]]></demand_id><is_picked dtype="string"><![CDATA[Y]]></is_picked><ldmnd_stat_id dtype="number"><![CDATA[100]]></ldmnd_stat_id><bo_search_keys><item><name>demand_id</name><value><![CDATA[%{demand_id}]]></value></item></bo_search_keys></row>

@@ -1,0 +1,2574 @@
+http://127.0.0.1:8888/rest/synch/binpart?warehouseid=A-SAN-JOSE&firstresult=0&maxresult=20
+http://srv-tpgen-nor.ltx-credence.com/csmobile/rest/synch/binpart?warehouseid=A-SAN-JOSE&firstresult=0&maxresult=20
+
+    {
+       "binPart":
+       [
+           {
+               "binCodeId": "0B0101",
+               "bpartId": "522-0056-00",
+               "id": "18",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-05T14:11:07-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0B0101",
+               "bpartId": "522-0095-00",
+               "id": "19",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-05T14:11:38-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0B0101",
+               "bpartId": "522H0091-00",
+               "id": "20",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-27T14:52:17-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0B0101",
+               "bpartId": "524-0060-00",
+               "id": "21",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-05T14:11:56-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0B0101",
+               "bpartId": "526-0000-00",
+               "id": "22",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-05T14:12:11-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0B0101",
+               "bpartId": "532-0032-01",
+               "id": "23",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-05T14:15:21-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0B0101",
+               "bpartId": "532-0040-00",
+               "id": "24",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-05T14:12:26-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0B0101",
+               "bpartId": "532H0002-00",
+               "id": "25",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-05T14:12:46-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0B0101",
+               "bpartId": "534-0038-00",
+               "id": "26",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-05T14:13:02-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0B0101",
+               "bpartId": "534-0059-00",
+               "id": "27",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-05T14:13:18-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0B0101",
+               "bpartId": "825-0396-00",
+               "id": "28",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-27T14:52:35-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0B0101",
+               "bpartId": "825-0399-00",
+               "id": "29",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-27T14:53:46-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0B0101",
+               "bpartId": "875-0119-00",
+               "id": "30",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-27T14:45:48-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0B0101",
+               "bpartId": "875-0608-00",
+               "id": "31",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-27T14:46:03-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0B0101",
+               "bpartId": "875-0634-07",
+               "id": "32",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-05T14:13:35-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0B0101",
+               "bpartId": "875-0740-00",
+               "id": "33",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-05T14:13:49-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0B0101",
+               "bpartId": "875-0758-00",
+               "id": "34",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-05T14:14:05-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0B0101",
+               "bpartId": "875-0760-00",
+               "id": "35",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-05T14:14:18-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0B0101",
+               "bpartId": "893-1082-00",
+               "id": "36",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-05T14:17:10-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0B0101",
+               "bpartId": "893-1179-00",
+               "id": "37",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-05T14:14:33-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0B0101",
+               "bpartId": "893-1195-00",
+               "id": "38",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-05T14:14:47-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0B0101",
+               "bpartId": "893-1207-00",
+               "id": "39",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-05T14:16:32-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0B0101",
+               "bpartId": "893-1211-00",
+               "id": "40",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-05T14:16:48-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0B0101",
+               "bpartId": "893-1215-00",
+               "id": "41",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-05T14:15:02-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0B0101",
+               "bpartId": "893-1229-00",
+               "id": "42",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-05T14:16:06-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0B0101",
+               "bpartId": "893-2389-03",
+               "id": "43",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-27T14:47:10-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0B0101",
+               "bpartId": "893-2909-00",
+               "id": "44",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-27T14:47:26-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0B0101",
+               "bpartId": "893-3329-01",
+               "id": "45",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-27T14:45:04-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0B0101",
+               "bpartId": "893-3652-00",
+               "id": "46",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-27T14:47:46-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0B0101",
+               "bpartId": "893-3694-09",
+               "id": "47",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-27T14:48:02-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0B0101",
+               "bpartId": "893-3695-00",
+               "id": "48",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-27T14:48:28-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0B0101",
+               "bpartId": "893-3695-01",
+               "id": "49",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-27T14:48:49-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0B0101",
+               "bpartId": "893-3695-03",
+               "id": "50",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-27T14:49:05-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0B0101",
+               "bpartId": "893-3763-00",
+               "id": "51",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-27T14:49:22-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0B0101",
+               "bpartId": "893-3915-00",
+               "id": "52",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-27T14:45:21-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0B0101",
+               "bpartId": "893-4499-00",
+               "id": "53",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-27T14:50:42-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0B0101",
+               "bpartId": "893-4499-01",
+               "id": "54",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-27T14:50:58-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0B0101",
+               "bpartId": "893-5660-05",
+               "id": "55",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-27T14:51:14-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0B0101",
+               "bpartId": "893-5692-02",
+               "id": "56",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-27T14:51:31-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0B0201",
+               "bpartId": "825-0397-00",
+               "id": "57",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-27T14:52:55-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0B0201",
+               "bpartId": "825-0398-00",
+               "id": "58",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-27T14:53:29-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0B0201",
+               "bpartId": "825-0401-00",
+               "id": "59",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-27T14:54:15-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0B0201",
+               "bpartId": "858-1083-02",
+               "id": "60",
+               "invTypeId": "good",
+               "lastRecDate": "2012-07-31T13:23:42-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0B0201",
+               "bpartId": "956-0164-00",
+               "id": "61",
+               "invTypeId": "good",
+               "lastRecDate": "2012-02-09T16:26:15-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0B0201",
+               "bpartId": "956-0164-02",
+               "id": "62",
+               "invTypeId": "good",
+               "lastRecDate": "2012-02-09T16:26:39-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0B0201",
+               "bpartId": "956-0294-00",
+               "id": "63",
+               "invTypeId": "good",
+               "lastRecDate": "2012-02-09T16:30:43-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0B0201",
+               "bpartId": "974-0296-07",
+               "id": "64",
+               "invTypeId": "good",
+               "lastRecDate": "2012-02-09T16:27:46-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0B0201",
+               "bpartId": "974-0296-12",
+               "id": "65",
+               "invTypeId": "good",
+               "lastRecDate": "2012-02-09T16:28:14-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0B0201",
+               "bpartId": "974-1173-00",
+               "id": "66",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-05T15:14:36-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0B0201",
+               "bpartId": "RUBIDCAL",
+               "id": "67",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-05T15:18:00-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0B0202",
+               "bpartId": "340-0055-05",
+               "id": "68",
+               "invTypeId": "good",
+               "lastRecDate": "2012-07-30T16:52:19-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0B0202",
+               "bpartId": "616-0042-00",
+               "id": "69",
+               "invTypeId": "good",
+               "lastRecDate": "2012-02-09T16:29:05-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0B0202",
+               "bpartId": "852-6383-00",
+               "id": "70",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-27T14:44:30-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0B0202",
+               "bpartId": "874-0170-00",
+               "id": "71",
+               "invTypeId": "good",
+               "lastRecDate": "2012-02-09T16:29:37-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0B0202",
+               "bpartId": "878-5121-00",
+               "id": "72",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-27T14:46:52-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0B0202",
+               "bpartId": "974-0296-01",
+               "id": "73",
+               "invTypeId": "good",
+               "lastRecDate": "2012-09-04T12:08:30-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0B0202",
+               "bpartId": "974-0296-06",
+               "id": "74",
+               "invTypeId": "good",
+               "lastRecDate": "2012-09-04T12:41:06-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0B0202",
+               "bpartId": "974-0300-02",
+               "id": "75",
+               "invTypeId": "good",
+               "lastRecDate": "2012-04-16T14:56:09-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0B0301",
+               "bpartId": "119-8660-00",
+               "id": "76",
+               "invTypeId": "good",
+               "lastRecDate": "2012-07-11T15:13:54-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0B0301",
+               "bpartId": "858-1082-00",
+               "id": "77",
+               "invTypeId": "good",
+               "lastRecDate": "2012-02-14T15:55:14-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0B0301",
+               "bpartId": "974-1068-00",
+               "id": "78",
+               "invTypeId": "good",
+               "lastRecDate": "2012-02-13T16:17:52-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0B0302",
+               "bpartId": "858-0099-01",
+               "id": "79",
+               "invTypeId": "good",
+               "lastRecDate": "2012-02-24T10:24:53-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0B0302",
+               "bpartId": "858-1129-00",
+               "id": "80",
+               "invTypeId": "good",
+               "lastRecDate": "2012-08-15T12:45:08-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0B0302",
+               "bpartId": "875-0782-00",
+               "id": "81",
+               "invTypeId": "good",
+               "lastRecDate": "2012-07-25T13:37:53-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0B0302",
+               "bpartId": "875-0785-00",
+               "id": "82",
+               "invTypeId": "good",
+               "lastRecDate": "2012-05-08T15:23:03-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0B0302",
+               "bpartId": "900014-00",
+               "id": "83",
+               "invTypeId": "good",
+               "lastRecDate": "2012-05-08T16:52:58-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0B0302",
+               "bpartId": "974-1138-02",
+               "id": "84",
+               "invTypeId": "good",
+               "lastRecDate": "2012-04-19T11:46:44-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0B0302",
+               "bpartId": "974-1138-04",
+               "id": "85",
+               "invTypeId": "good",
+               "lastRecDate": "2012-02-21T12:42:06-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0B0302",
+               "bpartId": "974-1164-00",
+               "id": "86",
+               "invTypeId": "good",
+               "lastRecDate": "2012-08-15T12:50:11-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0C0102",
+               "bpartId": "974-0240-00",
+               "id": "87",
+               "invTypeId": "good",
+               "lastRecDate": "2012-02-24T10:25:45-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0C0102",
+               "bpartId": "974-1039-01",
+               "id": "88",
+               "invTypeId": "good",
+               "lastRecDate": "2012-04-02T15:45:35-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0C0102",
+               "bpartId": "974-1061-01",
+               "id": "89",
+               "invTypeId": "good",
+               "lastRecDate": "2012-08-24T12:59:09-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0C0103",
+               "bpartId": "614H0359-00",
+               "id": "90",
+               "invTypeId": "good",
+               "lastRecDate": "2012-02-09T16:28:35-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0C0201",
+               "bpartId": "825-0400-00",
+               "id": "91",
+               "invTypeId": "good",
+               "lastRecDate": "2012-03-16T13:19:32-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0C0201",
+               "bpartId": "865-2769-00",
+               "id": "92",
+               "invTypeId": "good",
+               "lastRecDate": "2012-02-02T16:17:59-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0C0201",
+               "bpartId": "974-1034-01",
+               "id": "93",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-04T16:30:47-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0C0201",
+               "bpartId": "974-1035-01",
+               "id": "94",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-04T16:31:05-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0C0201",
+               "bpartId": "974-1036-01",
+               "id": "95",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-04T16:31:29-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0C0201",
+               "bpartId": "974-1037-01",
+               "id": "96",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-04T16:32:08-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0C0202",
+               "bpartId": "119-8821-00",
+               "id": "97",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-04T16:26:50-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0C0202",
+               "bpartId": "865-0709-00",
+               "id": "98",
+               "invTypeId": "good",
+               "lastRecDate": "2012-02-02T16:17:41-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0C0202",
+               "bpartId": "865-1709-00",
+               "id": "99",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-05T15:14:55-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0C0202",
+               "bpartId": "865-2061-01",
+               "id": "100",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-05T15:15:51-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0C0202",
+               "bpartId": "865-2157-00",
+               "id": "101",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-05T15:16:15-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0C0202",
+               "bpartId": "974-0121-01",
+               "id": "102",
+               "invTypeId": "good",
+               "lastRecDate": "2012-04-12T10:43:08-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0C0202",
+               "bpartId": "974-0162-00",
+               "id": "103",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-05T11:52:22-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0C0202",
+               "bpartId": "974-0500-00",
+               "id": "104",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-05T15:13:21-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0C0202",
+               "bpartId": "974-1012-00",
+               "id": "105",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-05T15:14:04-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0C0202",
+               "bpartId": "974-1108-00",
+               "id": "106",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-09T12:38:21-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0C0202",
+               "bpartId": "974-1184-00",
+               "id": "107",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-10T15:19:42-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0C0202",
+               "bpartId": "974-1270-00",
+               "id": "108",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-04T16:32:51-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0C0203",
+               "bpartId": "600H0009-00",
+               "id": "109",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-27T14:55:01-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0C0203",
+               "bpartId": "825-0195-00",
+               "id": "110",
+               "invTypeId": "good",
+               "lastRecDate": "2012-02-02T16:16:20-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0C0301",
+               "bpartId": "858-1035-04",
+               "id": "111",
+               "invTypeId": "good",
+               "lastRecDate": "2012-09-11T11:43:40-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0C0301",
+               "bpartId": "974-0217-00",
+               "id": "112",
+               "invTypeId": "good",
+               "lastRecDate": "2012-09-18T10:44:38-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0C0302",
+               "bpartId": "671-5355-00",
+               "id": "113",
+               "invTypeId": "good",
+               "lastRecDate": "2012-02-24T15:27:16-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0C0302",
+               "bpartId": "858-1248-00",
+               "id": "114",
+               "invTypeId": "good",
+               "lastRecDate": "2012-06-13T11:32:25-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0C0302",
+               "bpartId": "865-0663-00",
+               "id": "115",
+               "invTypeId": "good",
+               "lastRecDate": "2012-03-12T16:47:05-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0C0302",
+               "bpartId": "865-2712-01",
+               "id": "116",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-20T16:22:22-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0C0302",
+               "bpartId": "874-0094-00",
+               "id": "117",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-27T14:44:46-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0C0302",
+               "bpartId": "974-0203-01",
+               "id": "118",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-05T15:12:34-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0C0302",
+               "bpartId": "974-0218-01",
+               "id": "119",
+               "invTypeId": "good",
+               "lastRecDate": "2012-05-07T14:22:50-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0C0302",
+               "bpartId": "974-0233-03",
+               "id": "120",
+               "invTypeId": "good",
+               "lastRecDate": "2012-06-05T10:03:36-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0C0302",
+               "bpartId": "974-1110-00",
+               "id": "121",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-18T13:49:57-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0101",
+               "bpartId": "526-0027-00",
+               "id": "122",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-04T16:27:54-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0101",
+               "bpartId": "875-0472-07",
+               "id": "123",
+               "invTypeId": "good",
+               "lastRecDate": "2012-02-09T16:31:46-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0101",
+               "bpartId": "875-0513-08",
+               "id": "124",
+               "invTypeId": "good",
+               "lastRecDate": "2012-02-02T16:19:35-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0101",
+               "bpartId": "875-0615-00",
+               "id": "125",
+               "invTypeId": "good",
+               "lastRecDate": "2012-02-02T16:20:12-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0101",
+               "bpartId": "875-0759-00",
+               "id": "126",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-04T16:30:11-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0101",
+               "bpartId": "893-1135-00",
+               "id": "127",
+               "invTypeId": "good",
+               "lastRecDate": "2012-02-06T14:01:15-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0101",
+               "bpartId": "893-1138-00",
+               "id": "128",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-04T16:30:27-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0101",
+               "bpartId": "893-1215-02",
+               "id": "129",
+               "invTypeId": "good",
+               "lastRecDate": "2012-02-24T10:25:19-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0101",
+               "bpartId": "893-2356-00",
+               "id": "130",
+               "invTypeId": "good",
+               "lastRecDate": "2012-02-02T16:29:45-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0101",
+               "bpartId": "893-2356-03",
+               "id": "131",
+               "invTypeId": "good",
+               "lastRecDate": "2012-02-02T16:22:08-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0101",
+               "bpartId": "893-2356-06",
+               "id": "132",
+               "invTypeId": "good",
+               "lastRecDate": "2012-02-02T16:22:22-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0101",
+               "bpartId": "893-2367-00",
+               "id": "133",
+               "invTypeId": "good",
+               "lastRecDate": "2012-02-02T16:22:39-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0101",
+               "bpartId": "893-2367-01",
+               "id": "134",
+               "invTypeId": "good",
+               "lastRecDate": "2012-02-02T16:25:18-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0101",
+               "bpartId": "893-2367-03",
+               "id": "135",
+               "invTypeId": "good",
+               "lastRecDate": "2012-02-02T16:26:58-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0101",
+               "bpartId": "893-2379-00",
+               "id": "136",
+               "invTypeId": "good",
+               "lastRecDate": "2012-02-02T16:27:14-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0101",
+               "bpartId": "893-2385-01",
+               "id": "137",
+               "invTypeId": "good",
+               "lastRecDate": "2012-02-02T16:27:35-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0101",
+               "bpartId": "893-2386-01",
+               "id": "138",
+               "invTypeId": "good",
+               "lastRecDate": "2012-02-02T16:27:52-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0101",
+               "bpartId": "893-2387-00",
+               "id": "139",
+               "invTypeId": "good",
+               "lastRecDate": "2012-02-02T16:28:22-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0102",
+               "bpartId": "522-0097-00",
+               "id": "140",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-04T17:00:12-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0102",
+               "bpartId": "524-0059-00",
+               "id": "141",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-04T17:00:27-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0102",
+               "bpartId": "530-0073-00",
+               "id": "142",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-04T17:00:43-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0102",
+               "bpartId": "534-0036-00",
+               "id": "143",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-04T17:00:58-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0102",
+               "bpartId": "534-0042-00",
+               "id": "144",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-04T17:01:16-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0102",
+               "bpartId": "534-0043-00",
+               "id": "145",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-04T17:01:41-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0102",
+               "bpartId": "534-0047-00",
+               "id": "146",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-04T17:02:03-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0102",
+               "bpartId": "534-0051-00",
+               "id": "147",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-04T17:02:18-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0102",
+               "bpartId": "610-2455-00",
+               "id": "148",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-04T17:02:39-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0102",
+               "bpartId": "825-0421-00",
+               "id": "149",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-04T16:22:55-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0102",
+               "bpartId": "875-0614-00",
+               "id": "150",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-04T16:27:33-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0102",
+               "bpartId": "878-3150-00",
+               "id": "151",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-04T17:03:19-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0102",
+               "bpartId": "893-1230-00",
+               "id": "152",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-04T16:27:09-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0201",
+               "bpartId": "118-8283-00",
+               "id": "153",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-05T15:09:07-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0201",
+               "bpartId": "130-3034-01",
+               "id": "154",
+               "invTypeId": "good",
+               "lastRecDate": "2012-02-02T16:16:35-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0201",
+               "bpartId": "174-7465-00",
+               "id": "155",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-20T15:55:05-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0201",
+               "bpartId": "506H0054-01",
+               "id": "156",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-05T15:09:23-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0201",
+               "bpartId": "615-2052-00",
+               "id": "157",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-20T15:55:26-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0201",
+               "bpartId": "718-0083-00",
+               "id": "158",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-20T15:56:29-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0201",
+               "bpartId": "852-9862-01",
+               "id": "159",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-05T15:07:36-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0201",
+               "bpartId": "853-3456-00",
+               "id": "160",
+               "invTypeId": "good",
+               "lastRecDate": "2012-02-02T16:17:20-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0201",
+               "bpartId": "858-1248-01",
+               "id": "161",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-05T15:09:44-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0201",
+               "bpartId": "874-0122-00",
+               "id": "162",
+               "invTypeId": "good",
+               "lastRecDate": "2012-02-02T16:19:20-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0201",
+               "bpartId": "874-0184-00",
+               "id": "163",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-05T15:10:42-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0201",
+               "bpartId": "874-9528-00",
+               "id": "164",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-20T15:54:48-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0201",
+               "bpartId": "875-0780-00",
+               "id": "165",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-20T16:23:19-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0201",
+               "bpartId": "876-0064-00",
+               "id": "166",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-20T15:56:47-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0201",
+               "bpartId": "878-1367-00",
+               "id": "167",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-20T16:22:41-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0201",
+               "bpartId": "878-1922-00",
+               "id": "168",
+               "invTypeId": "good",
+               "lastRecDate": "2012-02-02T16:20:26-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0201",
+               "bpartId": "893-0107-00",
+               "id": "169",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-20T16:23:00-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0201",
+               "bpartId": "893-2375-04",
+               "id": "170",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-20T15:57:06-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0201",
+               "bpartId": "893-2389-04",
+               "id": "171",
+               "invTypeId": "good",
+               "lastRecDate": "2012-02-02T16:28:49-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0201",
+               "bpartId": "893-2427-01",
+               "id": "172",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-20T15:57:22-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0201",
+               "bpartId": "893-2907-00",
+               "id": "173",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-20T15:57:37-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0201",
+               "bpartId": "893-2916-00",
+               "id": "174",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-20T15:57:53-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0201",
+               "bpartId": "893-3237-02",
+               "id": "175",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-20T16:06:25-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0201",
+               "bpartId": "893-3537-02",
+               "id": "176",
+               "invTypeId": "good",
+               "lastRecDate": "2012-02-02T16:29:08-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0201",
+               "bpartId": "893-3605-01",
+               "id": "177",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-20T16:06:45-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0201",
+               "bpartId": "893-3656-03",
+               "id": "178",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-20T16:07:09-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0201",
+               "bpartId": "893-3699-00",
+               "id": "179",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-20T16:07:26-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0201",
+               "bpartId": "893-3852-00",
+               "id": "180",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-20T16:07:51-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0201",
+               "bpartId": "893-4083-00",
+               "id": "181",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-20T16:08:14-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0201",
+               "bpartId": "893-4102-00",
+               "id": "182",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-20T16:09:13-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0201",
+               "bpartId": "893-4186-00",
+               "id": "183",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-20T16:23:38-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0201",
+               "bpartId": "893-4212-00",
+               "id": "184",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-20T16:09:34-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0201",
+               "bpartId": "893-4275-00",
+               "id": "185",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-20T16:09:54-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0201",
+               "bpartId": "893-4518-00",
+               "id": "186",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-20T16:10:15-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0201",
+               "bpartId": "893-5757-09",
+               "id": "187",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-20T16:10:44-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0202",
+               "bpartId": "852-0181-00",
+               "id": "188",
+               "invTypeId": "good",
+               "lastRecDate": "2012-02-02T16:16:50-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0202",
+               "bpartId": "874-0062-01",
+               "id": "189",
+               "invTypeId": "good",
+               "lastRecDate": "2012-02-02T16:18:18-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0202",
+               "bpartId": "874-0173-00",
+               "id": "190",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-04T16:29:54-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0202",
+               "bpartId": "875-0751-00",
+               "id": "191",
+               "invTypeId": "good",
+               "lastRecDate": "2012-02-24T10:24:33-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0301",
+               "bpartId": "858-1212-01",
+               "id": "192",
+               "invTypeId": "good",
+               "lastRecDate": "2012-07-11T11:32:14-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0301",
+               "bpartId": "858-1357-02",
+               "id": "193",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-05T15:04:20-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0301",
+               "bpartId": "858-1357-03",
+               "id": "194",
+               "invTypeId": "good",
+               "lastRecDate": "2012-09-04T14:20:56-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0301",
+               "bpartId": "875-0617-00",
+               "id": "195",
+               "invTypeId": "good",
+               "lastRecDate": "2012-06-06T17:02:56-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0301",
+               "bpartId": "876-0203-00",
+               "id": "196",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-20T16:24:06-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0302",
+               "bpartId": "600-0007-00",
+               "id": "197",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-04T16:28:10-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0302",
+               "bpartId": "712H0006-00",
+               "id": "198",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-04T16:28:41-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0302",
+               "bpartId": "825-0391-00",
+               "id": "199",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-04T16:29:17-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0302",
+               "bpartId": "874-0164-00",
+               "id": "200",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-04T16:29:35-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0302",
+               "bpartId": "876-0149-00",
+               "id": "201",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-04T16:24:58-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0302",
+               "bpartId": "956-0234-00",
+               "id": "202",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-05T15:12:11-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "0D0302",
+               "bpartId": "956-1122-00",
+               "id": "203",
+               "invTypeId": "good",
+               "lastRecDate": "2012-03-07T11:30:57-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "Default Bad",
+               "bpartId": "118-8259-00",
+               "id": "2272",
+               "invTypeId": "bad",
+               "lastRecDate": "2012-04-30T13:42:07-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "Default Bad",
+               "bpartId": "118-8283-00",
+               "id": "2273",
+               "invTypeId": "bad",
+               "lastRecDate": "2012-01-09T09:44:04-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "Default Bad",
+               "bpartId": "174-6847-06",
+               "id": "2276",
+               "invTypeId": "bad",
+               "lastRecDate": "2012-01-25T11:46:07-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "Default Bad",
+               "bpartId": "650-6021-00",
+               "id": "2286",
+               "invTypeId": "bad",
+               "lastRecDate": "2012-03-19T11:25:04-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "Default Bad",
+               "bpartId": "671-5355-00",
+               "id": "2296",
+               "invTypeId": "bad",
+               "lastRecDate": "2012-02-24T10:11:10-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "Default Bad",
+               "bpartId": "671-5450-56",
+               "id": "2299",
+               "invTypeId": "bad",
+               "lastRecDate": "2012-05-09T14:18:10-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "Default Bad",
+               "bpartId": "671-7045-09",
+               "id": "2301",
+               "invTypeId": "bad",
+               "lastRecDate": "2012-09-12T17:35:43-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "Default Bad",
+               "bpartId": "671-7642-12",
+               "id": "2309",
+               "invTypeId": "bad",
+               "lastRecDate": "2012-04-25T15:10:47-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "Default Bad",
+               "bpartId": "672-6136-07",
+               "id": "2314",
+               "invTypeId": "bad",
+               "lastRecDate": "2012-02-15T16:14:39-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "Default Bad",
+               "bpartId": "672-6194-23",
+               "id": "2315",
+               "invTypeId": "bad",
+               "lastRecDate": "2012-07-10T13:16:16-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "Default Bad",
+               "bpartId": "858-1357-03",
+               "id": "2322",
+               "invTypeId": "bad",
+               "lastRecDate": "2012-07-11T12:14:53-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "Default Bad",
+               "bpartId": "858-1450-00",
+               "id": "2323",
+               "invTypeId": "bad",
+               "lastRecDate": "2012-02-21T10:08:06-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "Default Bad",
+               "bpartId": "96923123-04",
+               "id": "2346",
+               "invTypeId": "bad",
+               "lastRecDate": "2012-05-18T15:27:21-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "Default Bad",
+               "bpartId": "974-0233-02",
+               "id": "2353",
+               "invTypeId": "bad",
+               "lastRecDate": "2012-09-19T13:03:41-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "Default Bad",
+               "bpartId": "974-0233-03",
+               "id": "2354",
+               "invTypeId": "bad",
+               "lastRecDate": "2012-04-25T11:24:15-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "Default Bad",
+               "bpartId": "974-0250-01",
+               "id": "2356",
+               "invTypeId": "good",
+               "lastRecDate": "2012-09-10T16:25:43-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "Default Bad",
+               "bpartId": "974-1060-02",
+               "id": "2359",
+               "invTypeId": "bad",
+               "lastRecDate": "2012-01-11T16:31:24-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "Default Bad",
+               "bpartId": "974-1138-02",
+               "id": "2361",
+               "invTypeId": "bad",
+               "lastRecDate": "2012-03-13T14:54:30-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "Default Bad",
+               "bpartId": "974-1270-00",
+               "id": "2363",
+               "invTypeId": "bad",
+               "lastRecDate": "2012-06-05T11:18:14-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "Default Bad",
+               "bpartId": "974-1291-00",
+               "id": "2365",
+               "invTypeId": "bad",
+               "lastRecDate": "2012-06-25T15:11:46-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "Default Bad",
+               "bpartId": "974-1294-01",
+               "id": "2366",
+               "invTypeId": "bad",
+               "lastRecDate": "2012-06-13T11:43:50-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "Default Bad",
+               "bpartId": "974-1302-00",
+               "id": "2367",
+               "invTypeId": "bad",
+               "lastRecDate": "2012-08-30T13:57:31-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "Default Bad",
+               "bpartId": "979-1291-00",
+               "id": "2368",
+               "invTypeId": "bad",
+               "lastRecDate": "2012-07-11T14:22:39-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "Default Bad",
+               "bpartId": "979-1297-01",
+               "id": "2370",
+               "invTypeId": "bad",
+               "lastRecDate": "2012-05-29T12:30:21-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "Default Bad",
+               "bpartId": "979-1337-00",
+               "id": "2372",
+               "invTypeId": "bad",
+               "lastRecDate": "2012-04-09T16:24:52-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "Default Bad",
+               "bpartId": "979-1365-00",
+               "id": "2373",
+               "invTypeId": "bad",
+               "lastRecDate": "2012-09-11T16:03:26-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "Default Bad",
+               "bpartId": "982-6136-00",
+               "id": "2378",
+               "invTypeId": "bad",
+               "lastRecDate": "2012-08-10T10:15:40-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "Default Bad",
+               "bpartId": "982-7419-00",
+               "id": "2379",
+               "invTypeId": "bad",
+               "lastRecDate": "2012-06-18T11:18:32-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "Default Bad",
+               "bpartId": "982-7540-00",
+               "id": "2381",
+               "invTypeId": "bad",
+               "lastRecDate": "2012-05-23T16:41:42-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "Default Bad",
+               "bpartId": "982-7642-00",
+               "id": "2382",
+               "invTypeId": "bad",
+               "lastRecDate": "2012-06-11T11:08:59-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "HOLDING",
+               "bpartId": "105-8755-00",
+               "id": "2445",
+               "invTypeId": "good",
+               "lastRecDate": "2012-06-12T16:02:42-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "HOLDING",
+               "bpartId": "105-8756-00",
+               "id": "2446",
+               "invTypeId": "good",
+               "lastRecDate": "2012-06-12T16:03:02-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "HOLDING",
+               "bpartId": "105-8757-00",
+               "id": "2447",
+               "invTypeId": "good",
+               "lastRecDate": "2012-06-12T15:59:21-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "HOLDING",
+               "bpartId": "105-8758-00",
+               "id": "2448",
+               "invTypeId": "good",
+               "lastRecDate": "2012-06-12T16:01:29-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "HOLDING",
+               "bpartId": "174-7426-02",
+               "id": "2452",
+               "invTypeId": "good",
+               "lastRecDate": "2012-06-12T15:53:20-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "HOLDING",
+               "bpartId": "174-7452-00",
+               "id": "2453",
+               "invTypeId": "good",
+               "lastRecDate": "2012-06-12T15:47:07-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "HOLDING",
+               "bpartId": "174-7453-00",
+               "id": "2454",
+               "invTypeId": "good",
+               "lastRecDate": "2012-06-20T17:47:30-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "HOLDING",
+               "bpartId": "174-7454-00",
+               "id": "2455",
+               "invTypeId": "good",
+               "lastRecDate": "2012-06-12T15:47:27-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "HOLDING",
+               "bpartId": "174-7474-00",
+               "id": "2456",
+               "invTypeId": "good",
+               "lastRecDate": "2012-06-12T15:47:59-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "HOLDING",
+               "bpartId": "174-7485-00",
+               "id": "2457",
+               "invTypeId": "good",
+               "lastRecDate": "2012-06-12T15:48:14-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "HOLDING",
+               "bpartId": "174-7487-00",
+               "id": "2458",
+               "invTypeId": "good",
+               "lastRecDate": "2012-06-12T15:48:28-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "HOLDING",
+               "bpartId": "210-2170-00",
+               "id": "2459",
+               "invTypeId": "good",
+               "lastRecDate": "2012-06-12T15:48:42-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "HOLDING",
+               "bpartId": "210-2277-00",
+               "id": "2460",
+               "invTypeId": "good",
+               "lastRecDate": "2012-06-12T15:48:58-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "HOLDING",
+               "bpartId": "211-5405-00",
+               "id": "2461",
+               "invTypeId": "good",
+               "lastRecDate": "2012-06-12T15:49:14-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "HOLDING",
+               "bpartId": "211-5630-00",
+               "id": "2462",
+               "invTypeId": "good",
+               "lastRecDate": "2012-06-12T15:49:28-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "HOLDING",
+               "bpartId": "211-5730-00",
+               "id": "2463",
+               "invTypeId": "good",
+               "lastRecDate": "2012-06-12T15:49:43-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "HOLDING",
+               "bpartId": "211-5944-00",
+               "id": "2464",
+               "invTypeId": "good",
+               "lastRecDate": "2012-06-12T15:59:48-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "HOLDING",
+               "bpartId": "211-6011-00",
+               "id": "2465",
+               "invTypeId": "good",
+               "lastRecDate": "2012-06-12T15:49:57-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "HOLDING",
+               "bpartId": "211-6024-00",
+               "id": "2466",
+               "invTypeId": "good",
+               "lastRecDate": "2012-08-10T14:57:18-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "HOLDING",
+               "bpartId": "211-6028-00",
+               "id": "2467",
+               "invTypeId": "good",
+               "lastRecDate": "2012-06-12T16:00:04-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "HOLDING",
+               "bpartId": "381-3090-00",
+               "id": "2468",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-24T10:23:00-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "HOLDING",
+               "bpartId": "381-5610-00",
+               "id": "2469",
+               "invTypeId": "good",
+               "lastRecDate": "2012-06-12T15:50:15-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "HOLDING",
+               "bpartId": "381-5611-00",
+               "id": "2470",
+               "invTypeId": "good",
+               "lastRecDate": "2012-06-12T15:50:30-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "HOLDING",
+               "bpartId": "381-5807-00",
+               "id": "2471",
+               "invTypeId": "good",
+               "lastRecDate": "2012-06-12T16:01:44-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "HOLDING",
+               "bpartId": "381-5808-00",
+               "id": "2472",
+               "invTypeId": "good",
+               "lastRecDate": "2012-06-12T15:59:34-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "HOLDING",
+               "bpartId": "381-5894-00",
+               "id": "2473",
+               "invTypeId": "good",
+               "lastRecDate": "2012-06-12T16:00:23-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "HOLDING",
+               "bpartId": "381-5941-00",
+               "id": "2474",
+               "invTypeId": "good",
+               "lastRecDate": "2012-06-12T16:00:39-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "HOLDING",
+               "bpartId": "616H0029-00",
+               "id": "2475",
+               "invTypeId": "good",
+               "lastRecDate": "2012-06-12T16:03:15-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "HOLDING",
+               "bpartId": "620H0225-00",
+               "id": "2476",
+               "invTypeId": "good",
+               "lastRecDate": "2012-06-12T15:50:44-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "HOLDING",
+               "bpartId": "650-5870-00",
+               "id": "2477",
+               "invTypeId": "good",
+               "lastRecDate": "2012-06-12T16:38:36-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "HOLDING",
+               "bpartId": "650-5923-00",
+               "id": "2478",
+               "invTypeId": "good",
+               "lastRecDate": "2012-07-06T14:19:47-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "HOLDING",
+               "bpartId": "650-5925-00",
+               "id": "2479",
+               "invTypeId": "good",
+               "lastRecDate": "2012-07-06T14:20:18-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "HOLDING",
+               "bpartId": "650-5926-00",
+               "id": "2480",
+               "invTypeId": "good",
+               "lastRecDate": "2012-07-06T14:20:59-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "HOLDING",
+               "bpartId": "650-5927-00",
+               "id": "2481",
+               "invTypeId": "good",
+               "lastRecDate": "2012-07-06T14:19:29-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "HOLDING",
+               "bpartId": "650-5947-00",
+               "id": "2482",
+               "invTypeId": "good",
+               "lastRecDate": "2012-08-10T14:56:53-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "HOLDING",
+               "bpartId": "650-6130-00",
+               "id": "2483",
+               "invTypeId": "good",
+               "lastRecDate": "2012-07-06T14:21:29-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "HOLDING",
+               "bpartId": "650-6134-00",
+               "id": "2484",
+               "invTypeId": "good",
+               "lastRecDate": "2012-08-10T14:56:35-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "HOLDING",
+               "bpartId": "650-6145-00",
+               "id": "2485",
+               "invTypeId": "good",
+               "lastRecDate": "2012-08-22T15:42:05-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "HOLDING",
+               "bpartId": "671-4676-15",
+               "id": "2487",
+               "invTypeId": "good",
+               "lastRecDate": "2012-02-09T15:05:42-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "HOLDING",
+               "bpartId": "671-7419-14",
+               "id": "2488",
+               "invTypeId": "good",
+               "lastRecDate": "2012-02-21T12:58:32-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "HOLDING",
+               "bpartId": "671-7431-01",
+               "id": "2489",
+               "invTypeId": "good",
+               "lastRecDate": "2012-04-10T12:03:32-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "HOLDING",
+               "bpartId": "671-7540-40",
+               "id": "2490",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-20T11:03:07-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "HOLDING",
+               "bpartId": "671-7642-12",
+               "id": "2491",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-20T16:30:36-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "HOLDING",
+               "bpartId": "672-6136-07",
+               "id": "2492",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-20T16:28:25-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "HOLDING",
+               "bpartId": "672-6194-21",
+               "id": "2493",
+               "invTypeId": "good",
+               "lastRecDate": "2012-01-20T16:24:56-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "HOLDING",
+               "bpartId": "874-9858-00",
+               "id": "2504",
+               "invTypeId": "good",
+               "lastRecDate": "2012-09-21T11:58:35-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "HOLDING",
+               "bpartId": "885-0012-00",
+               "id": "2505",
+               "invTypeId": "good",
+               "lastRecDate": "2012-06-12T16:00:53-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "HOLDING",
+               "bpartId": "885-1302-04",
+               "id": "2506",
+               "invTypeId": "good",
+               "lastRecDate": "2012-06-12T16:02:00-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "HOLDING",
+               "bpartId": "885-1404-04",
+               "id": "2507",
+               "invTypeId": "good",
+               "lastRecDate": "2012-06-12T16:02:27-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "HOLDING",
+               "bpartId": "974-1157-00",
+               "id": "2516",
+               "invTypeId": "good",
+               "lastRecDate": "2012-06-18T11:12:57-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "HOLDING",
+               "bpartId": "974-1280-00",
+               "id": "2518",
+               "invTypeId": "good",
+               "lastRecDate": "2012-02-16T11:46:36-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "HOLDING",
+               "bpartId": "974-1281-00",
+               "id": "2519",
+               "invTypeId": "good",
+               "lastRecDate": "2012-02-09T15:12:06-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "HOLDING",
+               "bpartId": "974-1293-00",
+               "id": "2520",
+               "invTypeId": "good",
+               "lastRecDate": "2012-09-07T15:02:48-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "HOLDING",
+               "bpartId": "974-1315-04",
+               "id": "2521",
+               "invTypeId": "good",
+               "lastRecDate": "2012-06-08T12:42:22-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "HOLDING",
+               "bpartId": "974-1325-01",
+               "id": "2522",
+               "invTypeId": "good",
+               "lastRecDate": "2012-07-06T14:18:35-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "HOLDING",
+               "bpartId": "974-1326-01",
+               "id": "2523",
+               "invTypeId": "good",
+               "lastRecDate": "2012-07-06T14:18:52-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "HOLDING",
+               "bpartId": "974-1327-01",
+               "id": "2524",
+               "invTypeId": "good",
+               "lastRecDate": "2012-07-06T14:19:11-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "HOLDING",
+               "bpartId": "979-1297-01",
+               "id": "2528",
+               "invTypeId": "good",
+               "lastRecDate": "2012-05-29T12:56:25-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "HOLDING",
+               "bpartId": "982-1004-00",
+               "id": "2530",
+               "invTypeId": "good",
+               "lastRecDate": "2012-07-16T11:15:45-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "HOLDING",
+               "bpartId": "982-1157-00",
+               "id": "2532",
+               "invTypeId": "good",
+               "lastRecDate": "2012-05-14T15:09:53-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "HOLDING",
+               "bpartId": "982-6136-00",
+               "id": "2533",
+               "invTypeId": "good",
+               "lastRecDate": "2012-05-03T12:57:32-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "HOLDING",
+               "bpartId": "982-6194-00",
+               "id": "2535",
+               "invTypeId": "good",
+               "lastRecDate": "2012-05-14T15:09:53-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "HOLDING",
+               "bpartId": "982-7419-00",
+               "id": "2536",
+               "invTypeId": "good",
+               "lastRecDate": "2012-05-14T15:09:53-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "HOLDING",
+               "bpartId": "982-7540-00",
+               "id": "2538",
+               "invTypeId": "good",
+               "lastRecDate": "2012-05-14T15:09:53-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "HOLDING",
+               "bpartId": "982-7642-00",
+               "id": "2540",
+               "invTypeId": "good",
+               "lastRecDate": "2012-05-03T12:57:32-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "SR2",
+               "bpartId": "334H0018-00",
+               "id": "3007",
+               "invTypeId": "good",
+               "lastRecDate": "2012-02-14T12:05:31-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "SR2",
+               "bpartId": "346H0002-00",
+               "id": "3008",
+               "invTypeId": "good",
+               "lastRecDate": "2012-04-04T13:43:09-07:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "SR2",
+               "bpartId": "402H0000-00",
+               "id": "3009",
+               "invTypeId": "good",
+               "lastRecDate": "2012-02-14T12:05:31-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           },
+           {
+               "binCodeId": "SR2",
+               "bpartId": "893-0215-00",
+               "id": "3010",
+               "invTypeId": "good",
+               "lastRecDate": "2012-02-16T12:23:33-08:00",
+               "version": "0",
+               "warehouseId": "A-NORWOOD"
+           }
+       ]
+    }
+

@@ -1,0 +1,115 @@
+ 
+ http://127.0.0.1:8888/rest/inventory/load
+ http://srv-tpgen-nor.ltx-credence.com/csmobile/rest/inventory/load
+   {  "carrier":
+       {
+           "carrier_id": "DHL"
+       },
+       "carrier_refno": "987654321",
+       "company":
+       {
+           "company_id": "LTXSJ"
+       },
+       "created_by": "BMORENO",
+       "created_date": "2012-11-14T14:55:09-08:00",
+       "inventoryLineItems":
+       {
+           "bin_code_id": "43F",
+           "bpart_id": "956-0133-00",
+           "inv_type_id": "good",
+           "serial_no":"P8398"
+           "lineitemnumber": "0",
+           "man_adj_reason_id": "MISC",
+           "qty": "5.0"
+       },
+       "ipad_id": "jasperipad_2",
+       "no_of_packages": "0",
+       "sender_refno": "PO8397",
+       "to_warehouse":
+       {
+           "warehouse_id": "A-SAN-JOSE"
+       },
+       "transaction_type": "MISC",
+       "weight": "0.0"
+    }
+    
+  case 2:  
+       {  "carrier":
+       {
+           "carrier_id": "DHL"
+       },
+       "carrier_refno": "987654321",
+       "company":
+       {
+           "company_id": "RVI"
+       },
+       "created_by": "BMORENO",
+       "created_date": "2012-11-14T14:55:09-08:00",
+       "inventoryLineItems":
+       {
+           "bin_code_id": "43F",
+           "bpart_id": "865-1967-00",
+           "inv_type_id": "good",
+           "serial_no":"11087844"
+           "lineitemnumber": "0",
+           "man_adj_reason_id": "MISC",
+           "qty": "1.0"
+       },
+       "ipad_id": "jasperipad_2",
+       "no_of_packages": "0",
+       "sender_refno": "PO8397",
+       "to_warehouse":
+       {
+           "warehouse_id": "A-SINGAPORE"
+       },
+       "transaction_type": "MRC",
+       "weight": "0.0"
+    }
+
+    case 3
+
+           { "transaction_type" : "DRC",  
+"our_refno" : "SH1302200052",  
+"created_by" : "BMORENO",
+"to_warehouse":
+       {
+           "warehouse_id": "A-SINGAPORE"
+       },
+
+       "inventoryLineItems":
+       {
+           "bpart_id": "865-7493-07",
+           "bin_code_id": "01A",
+           "serial_no":"11382234"
+           "inv_type_id": "good",
+           "lineitemnumber": "0",
+           "qty": "1.0"
+		
+       },
+       "ipad_id": "jasperipad_2"
+    }
+    
+    
+    case 4
+    
+
+     { "transaction_type" : "RFR",  
+"our_refno" : "RP1301220030",  
+"created_by" : "BMORENO",
+"to_warehouse":
+       {
+           "warehouse_id": "A-SAN-JOSE"
+       },
+
+       "inventoryLineItems":
+       {
+           "bpart_id": "671-5351-02",
+           "bin_code_id": "40A",
+           "serial_no":"671-5351-9747017PP"
+           "inv_type_id": "good",
+           "lineitemnumber": "0",
+           "qty": "1.0"
+		
+       },
+       "ipad_id": "jasperipad_300"
+    }

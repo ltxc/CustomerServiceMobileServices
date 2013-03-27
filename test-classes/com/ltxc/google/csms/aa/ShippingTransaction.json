@@ -1,0 +1,135 @@
+ //shipment instructions
+ http://127.0.0.1:8888/rest/synch/shipmentinstructions
+ 
+ //transaction
+ 
+ http://127.0.0.1:8888/rest/shipping/loadall?warehouseid=A-SAN-JOSE
+ http://srv-tpgen-nor.ltx-credence.com/csmobile/rest/shipping/loadall?warehouseid=A-SAN-JOSE
+test case 1:
+{
+	"carrier_id":"DHL",
+	"carrier_refno":"ref1234",
+	"created_by":"jlu",
+	"created_date":"2013-01-03T00:00:00-08:00",
+	"fr_warehouse_id":"A-SAN-JOSE",	
+	"no_of_packages":"3",
+	"weight":"234.3",
+	"ifield1":"3",
+	"sfield1":"sfield1",
+	"printer":"\\\\miprint\\CP03A",
+	"shipped_by":"jlu",
+	"ship_instructions":"ship instruction",
+	"doc_type_id":"10",
+	"to_company_id":"1038-002098",
+	"transaction_type":"PICK",
+	"ipad_id":"jluipad_01",
+	"shippingLineItems":
+	[
+	    { "bpart_id": "974-1004-01",
+           "demand_id": "16821",
+           "serial_no":"TEST0001",
+           "fr_inv_type_id": "good",
+           "lineitemnumber": "1",
+	     "orig_doc_id":"RP1233444451",
+		"shipped_qty":"2",
+           "shippinglist_id":"2",
+	     "ifield1":"3",
+	     "sfield1":"sfield1"
+		},
+	    { "bpart_id": "974-1004-02",
+           "demand_id": "16822",
+           "serial_no":"TEST0002",
+           "fr_inv_type_id": "bad",
+           "lineitemnumber": "2",
+	     "orig_doc_id":"RP1233444452",
+		"shipped_qty":"23",
+           "shippinglist_id":"3",
+	     "ifield1":"2",
+	     "sfield1":"sfield1"
+		}
+	]
+}
+
+test case 2:
+{
+	"carrier_id":"DHL",
+	"carrier_refno":"ref1234",
+	"created_by":"jlu",
+	"created_date":"2013-01-03T00:00:00-08:00",
+	"fr_warehouse_id":"A-SAN-JOSE",	
+	"no_of_packages":"3",
+	"weight":"234.3",
+	"ifield1":"3",
+	"sfield1":"sfield1",
+	"shipped_by":"BMORENO",
+	"ship_instructions":"ship instruction",
+	"printer":"\\\\miprint\\CP03A",
+	"doc_type_id":"10",
+	"to_company_id":"10358-000130",
+	"transaction_type":"PICK",
+	"ipad_id":"jluipad_01",
+	"shippingLineItems":
+	[
+	    { "bpart_id": "974-1004-01",
+           "demand_id": "16546",
+           "serial_no":"TEST0001",
+           "fr_inv_type_id": "good",
+           "lineitemnumber": "1",
+	     "orig_doc_id":"RP1233444451",
+		"shipped_qty":"2",
+           "shippinglist_id":"2",
+	     "ifield1":"3",
+	     "sfield1":"sfield1"
+		}
+	]
+}
+
+
+
+ case 3:
+  PICK
+  {
+	"carrier_id":"DHL",
+	"carrier_refno":"987654987",
+	"created_by":"BMORENO",
+	"created_date":"2013-01-03T00:00:00-08:00",
+	"fr_warehouse_id":"A-SAN-JOSE",	
+	"no_of_packages":"3",
+	"weight":"1235",
+	"ifield1":"3",
+	"sfield1":"sfield1",
+	"shipped_by":"BMORENO",
+	"ship_instructions":"ship instruction",
+	"printer":"\\\\miprint\\CP03A",
+	"doc_type_id":"10",
+	"to_company_id":"1038-002098",
+	"transaction_type":"PICK",
+	"ipad_id":"jluipad_02",
+	"shippingLineItems":
+	[
+	    { "bpart_id": "865-7474-06",
+           "demand_id": "16836",
+           "serial_no": "11137130",
+           "fr_inv_type_id": "good",
+           "lineitemnumber": "1",
+	     "orig_doc_id": "RP1301160028@@1",
+		"shipped_qty": "1",
+           "shippinglist_id": "2",
+	     "ifield1": "3",
+	     "item_id": "123195",
+	     "sfield1": "sfield1"
+		},
+	    { "bpart_id": "865-3007-00",
+           "demand_id": "16840",
+           "serial_no": "11307214",
+           "fr_inv_type_id": "good",
+           "lineitemnumber": "2",
+	     "orig_doc_id": "RP1301160029@@1",
+		"shipped_qty": "1",
+           "shippinglist_id": "3",
+	     "ifield1": "2",
+	     "item_id": "108652",
+	     "sfield1": "sfield1"
+		}
+	]
+}

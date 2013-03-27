@@ -1,0 +1,16 @@
+<root xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://astea.com.schema.bc.logistic_sourcing"><session email="" alias="">
+%{vendoraction}    
+<state bc_name="ship"><action name="execmacro"><attribute bo_name="main" macro_name="NewBatch" />
+<attribute dtype="array" value="doc_type_id;demand_id_list;fr_warehouse_id;%{target};shipped_by;no_of_packages;weight" />
+<attribute dtype="array" value="%{doc_type_id};%{demand_id_list};%{fr_warehouse_id};%{target_value};%{shipped_by};%{no_of_packages};%{weight}" />                  
+</action></state><state bc_name="Ship" use_cache_refresh="False"><action name="declare"><attribute dtype="string" in_var="" out_var="" name="SHIPID" value="" /><attribute dtype="string" in_var="" out_var="" name="SHIPLNID" value="" /></action><action name="getdescrtableex"><attribute in_var="" out_var="SHIPID" table_name="shipl" element_name="shiph_id" search_criteria="orig_doc_id='%{orig_doc_id}' and demand_id = '%{demand_id}'" default_value="" /></action><action name="data"><main><row number="1">
+<shiph_id in_var="SHIPID">in_var</shiph_id><ship_instructions><![CDATA[%{ship_instructions}]]></ship_instructions><is_ship_list_open><![CDATA[Y]]></is_ship_list_open>
+</row></main></action>
+<action name="data"><main><row number="1">
+<shiph_id in_var="SHIPID">in_var</shiph_id>
+<weight><![CDATA[%{weight}]]></weight>
+<shipped_by><![CDATA[%{shipped_by}]]></shipped_by>
+<cc_is_print_ship_list dtype="string"><![CDATA[Y]]></cc_is_print_ship_list>
+<cc_printer_location dtype="string"><![CDATA[%{printer}]]></cc_printer_location>
+</row></main></action>
+</state></session></root>

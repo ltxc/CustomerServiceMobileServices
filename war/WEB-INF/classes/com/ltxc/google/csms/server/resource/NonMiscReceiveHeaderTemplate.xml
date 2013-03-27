@@ -1,0 +1,40 @@
+<root xmlns:dt="urn:schemas-microsoft-com:datatypes">
+  <session alias="" email="">
+    %{rfr2_action}
+    <state bc_name="receive">
+      <action name="declare">
+        <attribute dtype="string" in_var="" out_var="" name="strReceiveHId" value="" />
+      </action>
+        <action name="CalculateFormula">
+        <attribute in_var="" out_var="strReceiveHId" formula_name="receiveh_id" />
+      </action>
+      <action name="data">
+        <main>
+          <row number="1">
+            <receiveh_id status="0" len="30" in_var="strReceiveHId">in_var</receiveh_id>
+            <ref_doc_type_id status="0" len="30">%{ref_doc_type_id}</ref_doc_type_id> 
+            <our_refno status="8" len="30">%{outputrefno}</our_refno> 
+            <received_by status="0" len="30">%{received_by}</received_by> 
+            <to_warehouse_id status="0" len="30">%{to_warehouse_id}</to_warehouse_id>
+            <ldmnd_stat_id>900</ldmnd_stat_id>                        
+          </row>
+        </main>
+      </action>    
+      <action name="data">
+        <main>
+          <row number="1">
+            <receiveh_id status="0" len="30" in_var="strReceiveHId">in_var</receiveh_id>
+          	<sender_refno>%{sender_refno}</sender_refno>
+            <carrier_id>%{carrier_id}</carrier_id>
+            <carrier_refno>%{carrier_refno}</carrier_refno>
+          </row>
+        </main>
+        <full_receivel>
+           %{nondrc_full_receivel}
+           %{drc_full_receivel}
+        </full_receivel>
+      </action> 
+          %{drc_close}
+    </state>
+  </session>
+</root>
