@@ -4,6 +4,7 @@ import java.io.Serializable;
 import javax.persistence.*;
 import javax.xml.bind.Unmarshaller;
 import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlTransient;
 
 import com.ltxc.google.csms.shared.SharedConstants;
 
@@ -70,6 +71,7 @@ public class ShippingLineItem implements Serializable, TemplateBase{
 	//bi-directional many-to-one association to ShippingHeader
     @ManyToOne
 	@JoinColumn(name="shippingheaderid")
+    @XmlTransient
 	private ShippingTransaction shippingHeader;
 
     public ShippingLineItem() {

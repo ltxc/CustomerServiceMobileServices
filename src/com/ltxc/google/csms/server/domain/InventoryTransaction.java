@@ -112,6 +112,10 @@ public class InventoryTransaction implements Serializable, TransactionBase {
 	@JoinColumn(name="carrier_id", referencedColumnName="carrier_id")
 	private Carrier carrier;
 
+    @Transient
+    //0 - check process status, 1 - process
+    private int actioncode = 1; 
+	
 	//bi-directional many-to-one association to InventoryLineItem
 
 	@OneToMany(mappedBy="inventoryHeader", cascade={CascadeType.ALL})
@@ -335,6 +339,14 @@ public class InventoryTransaction implements Serializable, TransactionBase {
 	
 	
 
+	public int getActioncode() {
+		return actioncode;
+	}
+
+	public void setActioncode(int actioncode) {
+		this.actioncode = actioncode;
+	}
+
 	public String getXmldoc() {
 		return xmldoc;
 	}
@@ -472,7 +484,7 @@ public class InventoryTransaction implements Serializable, TransactionBase {
       list.size();
       return list;
     }catch (NoResultException ne) {
-			ne.printStackTrace();
+			//ne.printStackTrace();
 
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -495,7 +507,7 @@ public class InventoryTransaction implements Serializable, TransactionBase {
     	  entity.getLineItems().size();
       return entity;
     }catch (NoResultException ne) {
-			ne.printStackTrace();
+			//ne.printStackTrace();
 
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -528,7 +540,7 @@ public class InventoryTransaction implements Serializable, TransactionBase {
       resultList.size();
       return resultList;
     }catch (NoResultException ne) {
-			ne.printStackTrace();
+			//ne.printStackTrace();
 
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -552,7 +564,7 @@ public class InventoryTransaction implements Serializable, TransactionBase {
       resultList.size();
       return resultList;
     }catch (NoResultException ne) {
-			ne.printStackTrace();
+			//ne.printStackTrace();
 
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -578,7 +590,7 @@ public class InventoryTransaction implements Serializable, TransactionBase {
       resultList.size();
       return resultList;
     }catch (NoResultException ne) {
-			ne.printStackTrace();
+			//ne.printStackTrace();
 
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -614,7 +626,7 @@ public class InventoryTransaction implements Serializable, TransactionBase {
 	      	  result.getLineItems().size();
 	      
 	    }catch (NoResultException ne) {
-			ne.printStackTrace();
+			//ne.printStackTrace();
 
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -650,6 +662,11 @@ public class InventoryTransaction implements Serializable, TransactionBase {
 	@Override
 	public String getProcessStatus() {
 		return this.process_status;
+	}
+
+	@Override
+	public int getProcessActionCode() {
+		return this.actioncode;
 	}
 
 

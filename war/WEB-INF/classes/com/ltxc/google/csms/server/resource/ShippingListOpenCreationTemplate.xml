@@ -10,7 +10,7 @@
 <shiph_id in_var="SHIPID">in_var</shiph_id>
 <weight><![CDATA[%{weight}]]></weight>
 <shipped_by><![CDATA[%{shipped_by}]]></shipped_by>
-<cc_is_print_ship_list dtype="string"><![CDATA[Y]]></cc_is_print_ship_list>
+<cc_is_print_ship_list dtype="string"><![CDATA[%{isprinting}]]></cc_is_print_ship_list>
 <cc_printer_location dtype="string"><![CDATA[%{printer}]]></cc_printer_location>
 </row></main></action>
 </state></session></root>

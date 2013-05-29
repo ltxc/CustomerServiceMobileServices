@@ -130,7 +130,15 @@ public class ViewShippingList implements Serializable {
 	
 	@Column(name="is_vendor")
 	private String is_vendor;
+	
+	@Column(name="fr_inv_type_id")
+	private String fr_inv_type_id;
+	
 
+	@Column(name="severity_id")
+	private String severity_id;
+	
+	
 	@Column(name="version")
 	private int version;
 
@@ -338,12 +346,30 @@ public class ViewShippingList implements Serializable {
 
 	
 	
+	public String getSeverity_id() {
+		return severity_id;
+	}
+
+	public void setSeverity_id(String severity_id) {
+		this.severity_id = severity_id;
+	}
+
 	public String getIs_vendor() {
 		return is_vendor;
 	}
 
 	public void setIs_vendor(String is_vendor) {
 		this.is_vendor = is_vendor;
+	}
+
+	
+	
+	public String getFr_inv_type_id() {
+		return fr_inv_type_id;
+	}
+
+	public void setFr_inv_type_id(String fr_inv_type_id) {
+		this.fr_inv_type_id = fr_inv_type_id;
 	}
 
 	@XmlTransient

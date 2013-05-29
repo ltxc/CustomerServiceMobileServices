@@ -7,8 +7,10 @@ import java.util.logging.Logger;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.ws.rs.Consumes;
+import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
+import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
@@ -174,6 +176,39 @@ public class ShippingService extends RestfulServiceBase {
 					}
 				});
 				return response;
+		}
+		
+		
+		@GET
+		@Consumes ({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
+		@Path("/result")
+		public Response getResult(@Context HttpServletRequest req,  @QueryParam("ipadid") String ipad_id)
+		{
+			TransactionService transactionService = new TransactionService(SharedConstants.RESET_INTERVAL);
+			ShippingTransaction shippingTransaction = new ShippingTransaction();
+			shippingTransaction.setIpad_id(ipad_id);
+			shippingTransaction.setActioncode(0);
+			Response response = transactionService.processTransaction(this, req, shippingTransaction,new ITransactionService() {
+				
+				@Override
+				public TransactionBase searchExistingTransaction(TransactionBase transaction) {
+					return ShippingTransaction.findShippingTransactionByIPadID(transaction.getTransactionID());
+				}
+				
+				@Override
+				public void preLoad(TransactionBase transaction, ProcessResult processResult) {
+					// TODO Auto-generated method stub
+					
+				}
+				
+				@Override
+				public void postLoad(TransactionBase transaction,
+						ProcessResult processResult) {
+					// TODO Auto-generated method stub
+					
+				}
+			});
+			return response;
 		}
 	
 }

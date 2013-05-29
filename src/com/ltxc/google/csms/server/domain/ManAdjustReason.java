@@ -7,6 +7,9 @@ import javax.persistence.*;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
 
+import org.eclipse.persistence.annotations.Cache;
+import org.eclipse.persistence.config.CacheIsolationType;
+
 import com.ltxc.google.csms.server.servlet.utils.EMFCSMOBILE;
 
 

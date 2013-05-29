@@ -64,7 +64,7 @@ public class CycleCountService extends RestfulServiceBase {
 	}
 	
 	
-	
+	//this is the one used by client
 	@POST
 	@Consumes ({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
 	@Path("/load")
@@ -191,8 +191,6 @@ public class CycleCountService extends RestfulServiceBase {
 	public Response handlePartCycleCount(HttpServletRequest req,  List<CycleCountCount> cycleCounts, String who,String warehouse_id,String bin_code_id,String bpart_id, String isclear)
 	{
 		
-
-
 		String type = SharedConstants.CYCLE_TYPE_PART;		
 		boolean isCleared = false;
 		Date process_date = Calendar.getInstance().getTime();

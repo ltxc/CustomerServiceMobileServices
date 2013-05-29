@@ -19,6 +19,7 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.Response.Status;
 
+import com.ltxc.google.csms.server.domain.ApplicationData;
 import com.ltxc.google.csms.server.domain.BinPart;
 import com.ltxc.google.csms.server.domain.Carrier;
 import com.ltxc.google.csms.server.domain.Company;
@@ -37,6 +38,43 @@ public class SynchService extends RestfulServiceBase {
 	private static Logger logger = Logger
 			.getLogger(SynchService.class.getName());
 	//Get methods
+	@GET
+	@Consumes ({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
+	@Path("/applicationdata")
+	public Response getApplicationData(@Context HttpServletRequest req)
+	{
+		super.checkRequest(req);
+
+		List<ApplicationData> list = new ArrayList<ApplicationData>();
+		Status status = Response.Status.INTERNAL_SERVER_ERROR; //Internal Server Error
+		try{
+			list = ApplicationData.findAllApplicationDatas();
+			status = Response.Status.OK;
+		}catch(Exception xe)
+		{
+			logger.log(Level.SEVERE, "getApplicationData - Error:"+xe.getMessage());
+			throwInternalErrorException(xe.getMessage());
+		}
+
+		
+		Response.ResponseBuilder builder = null;
+		if(list==null||list.size()<=0)
+		{
+			
+			builder = Response.ok("{}", req.getContentType()).status(status);
+		}
+		else
+		{
+			GenericEntity<List<ApplicationData>> entity = new
+				GenericEntity<List<ApplicationData>>(
+								list) {
+						};
+						builder = Response.ok(entity, req.getContentType()).status(status);
+		}
+		return builder.build();
+	}
+	
+	
 	@GET
 	@Consumes ({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
 	@Path("/company")

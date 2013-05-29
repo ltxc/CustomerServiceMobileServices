@@ -12,6 +12,7 @@ public interface TransactionBase extends TemplateBase {
 	Date getProcessDate();
 	String getProcessMessage();
 	String getProcessStatus();
+	int getProcessActionCode(); //0 - check status, 1 - process
 	void persist();
 	void update();
 	void remove();

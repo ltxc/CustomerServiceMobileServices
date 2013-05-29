@@ -13,6 +13,9 @@ import com.ltxc.google.csms.server.servlet.utils.EMFCSMOBILE;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
 
+import org.eclipse.persistence.annotations.Cache;
+import org.eclipse.persistence.config.CacheIsolationType;
+
 
 /**
  * The persistent class for the Queries database table.
@@ -21,6 +24,7 @@ import javax.xml.bind.annotation.XmlTransient;
 @XmlRootElement
 @Entity
 @Table(name="Queries")
+@Cache(isolation=CacheIsolationType.ISOLATED)
 public class Queries implements Serializable {
 	private static final long serialVersionUID = 1L;
 	private static Logger logger = Logger

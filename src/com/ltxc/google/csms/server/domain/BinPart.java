@@ -5,6 +5,9 @@ import javax.persistence.*;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
 
+import org.eclipse.persistence.annotations.Cache;
+import org.eclipse.persistence.config.CacheIsolationType;
+
 import com.ltxc.google.csms.server.service.restful.DateParam;
 import com.ltxc.google.csms.server.servlet.utils.EMFCSMOBILE;
 
@@ -19,6 +22,7 @@ import java.util.logging.Logger;
 @Entity
 @XmlRootElement
 @Table(name="BinPart")
+@Cache(isolation=CacheIsolationType.ISOLATED)
 public class BinPart implements Serializable {
 	private static final long serialVersionUID = 1L;
 	private static Logger logger = Logger.getLogger(BinPart.class.getName());

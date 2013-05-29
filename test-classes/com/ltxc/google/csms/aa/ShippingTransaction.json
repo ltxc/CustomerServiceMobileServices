@@ -1,8 +1,10 @@
  //shipment instructions
  http://127.0.0.1:8888/rest/synch/shipmentinstructions
  
- //transaction
+ //check result
+ http://127.0.0.1:8888/rest/shipping/result?ipadid=Ipad2cs23185PICK7.789
  
+ //transaction 
  http://127.0.0.1:8888/rest/shipping/loadall?warehouseid=A-SAN-JOSE
  http://srv-tpgen-nor.ltx-credence.com/csmobile/rest/shipping/loadall?warehouseid=A-SAN-JOSE
 test case 1:

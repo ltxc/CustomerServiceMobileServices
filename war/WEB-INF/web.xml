@@ -31,7 +31,7 @@
 		</init-param>
 		<init-param>
 			<param-name>URL_AsteaAlliance_API</param-name>
-			<param-value>http://srv-aaui-nor.ltx-credence.com/AsteaAlliance100_APP_Framework/Astea.AO.API.asmx</param-value>
+			<param-value>http://srv-aaui-dev.ltx-credence.com/AsteaAlliance100_APP_Framework/Astea.AO.API.asmx</param-value>
 		</init-param>
 		<init-param>
 			<param-name>AA_UserName</param-name>
@@ -64,7 +64,14 @@
 		<load-on-startup>1</load-on-startup>
 
 	</servlet>
-  
+    <mime-mapping>
+        <extension>ipa</extension>
+        <mime-type>application/octet-stream</mime-type>
+    </mime-mapping>
+    <mime-mapping>
+        <extension>plist</extension>
+        <mime-type>text/xml</mime-type>
+    </mime-mapping>  
   
   <servlet-mapping>
 		<servlet-name>Jersey Web Application</servlet-name>

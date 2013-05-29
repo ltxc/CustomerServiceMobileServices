@@ -109,6 +109,10 @@ public class ShippingTransaction implements Serializable, TransactionBase {
     
     @Lob()
 	private String xmldoc1;
+    
+    @Transient
+    //0 - check process status, 1 - process
+    private int actioncode = 1; 
 
 	//bi-directional many-to-one association to ShippingLineItem
 	@OneToMany(mappedBy="shippingHeader", cascade={CascadeType.ALL})
@@ -248,6 +252,14 @@ public class ShippingTransaction implements Serializable, TransactionBase {
 	
 	
 	
+
+	public int getActioncode() {
+		return actioncode;
+	}
+
+	public void setActioncode(int actioncode) {
+		this.actioncode = actioncode;
+	}
 
 	public String getShipped_by() {
 		return shipped_by;
@@ -432,7 +444,7 @@ public class ShippingTransaction implements Serializable, TransactionBase {
       list.size();
       return list;
     }catch (NoResultException ne) {
-			ne.printStackTrace();
+			//ne.printStackTrace();
 
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -453,7 +465,7 @@ public class ShippingTransaction implements Serializable, TransactionBase {
       ShippingTransaction entity = em.find(ShippingTransaction.class, id);
       return entity;
     }catch (NoResultException ne) {
-			ne.printStackTrace();
+			//ne.printStackTrace();
 
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -476,7 +488,7 @@ public class ShippingTransaction implements Serializable, TransactionBase {
       resultList.size();
       return resultList;
     }catch (NoResultException ne) {
-			ne.printStackTrace();
+			//ne.printStackTrace();
 
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -520,7 +532,7 @@ public class ShippingTransaction implements Serializable, TransactionBase {
 
 	      
 	    }catch (NoResultException ne) {
-			ne.printStackTrace();
+			//ne.printStackTrace();
 
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -652,6 +664,11 @@ public class ShippingTransaction implements Serializable, TransactionBase {
 	@Override
 	public String getProcessStatus() {
 		return this.process_status;
+	}
+
+	@Override
+	public int getProcessActionCode() {
+		return this.actioncode;
 	}	
 	
 }

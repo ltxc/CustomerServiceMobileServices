@@ -11,6 +11,7 @@ import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
+import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
@@ -20,6 +21,8 @@ import com.ltxc.google.csms.server.domain.Company;
 import com.ltxc.google.csms.server.domain.InventoryLineItem;
 import com.ltxc.google.csms.server.domain.InventoryTransaction;
 import com.ltxc.google.csms.server.domain.ProcessResult;
+import com.ltxc.google.csms.server.domain.ShippingTransaction;
+import com.ltxc.google.csms.server.domain.TransactionBase;
 import com.ltxc.google.csms.server.domain.User;
 import com.ltxc.google.csms.server.domain.Warehouse;
 import com.ltxc.google.csms.server.service.ILoader;
@@ -165,6 +168,41 @@ public class InventoryService extends RestfulServiceBase {
 
 		return builder.build();
 	}
+	
+	
+	@GET
+	@Consumes ({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
+	@Path("/result")
+	public Response getResult(@Context HttpServletRequest req,  @QueryParam("ipadid") String ipad_id)
+	{
+		TransactionService transactionService = new TransactionService(SharedConstants.RESET_INTERVAL);
+		InventoryTransaction inventoryTransaction = new InventoryTransaction();
+		inventoryTransaction.setIpad_id(ipad_id);
+		inventoryTransaction.setActioncode(0);
+		Response response = transactionService.processTransaction(this, req, inventoryTransaction,new ITransactionService() {
+			
+			@Override
+			public TransactionBase searchExistingTransaction(TransactionBase transaction) {
+				return InventoryTransaction.findInventoryTransactionByIPadID(transaction.getTransactionID());
+			}
+			
+			@Override
+			public void preLoad(TransactionBase transaction, ProcessResult processResult) {
+				// TODO Auto-generated method stub
+				
+			}
+			
+			@Override
+			public void postLoad(TransactionBase transaction,
+					ProcessResult processResult) {
+				// TODO Auto-generated method stub
+				
+			}
+		});
+		return response;
+	}
+	
+/*************** help methods ************************/
 	
 	private Warehouse findWarehouseById(String warehouse_id)
 	{

@@ -5,9 +5,9 @@ public enum TransactionTypeEnum {
 
 	NONE("none","none","none",0),
 	MRC("MRC","misc_receive","400",1),
-	DRC("DRC","receive","300",2),
-	RRFV("RRFV","receive","800",4),
-	RFR("RFR","receive","900",5),
+	DRC("DRC","receive_via_shiplist","300",2),
+	RRFV("RRFV","receive_via_vendor","800",4),
+	RFR("RFR","receive_via_repair","900",5),
 	PICK("PICK","allocated to picked","none",6),
 	SHIP("SHIP","picked to shipped","none",7),
 	PICKLIST("PICKLIST","picklistopen to picked","none",8),

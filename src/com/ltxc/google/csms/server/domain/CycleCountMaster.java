@@ -5,6 +5,9 @@ import javax.persistence.*;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
 
+import org.eclipse.persistence.annotations.Cache;
+import org.eclipse.persistence.config.CacheIsolationType;
+
 import com.ltxc.google.csms.server.servlet.utils.EMFCSMOBILE;
 
 import java.util.Date;
@@ -18,6 +21,7 @@ import java.util.List;
 @XmlRootElement
 @Table(name="CycleCountMaster")
 @Entity
+@Cache(isolation=CacheIsolationType.ISOLATED)
 public class CycleCountMaster implements Serializable {
 	private static final long serialVersionUID = 1L;
 

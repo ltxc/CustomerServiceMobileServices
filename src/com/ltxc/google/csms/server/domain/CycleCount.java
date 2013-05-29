@@ -4,6 +4,9 @@ import java.io.Serializable;
 import javax.persistence.*;
 import javax.xml.bind.annotation.XmlRootElement;
 
+import org.eclipse.persistence.annotations.Cache;
+import org.eclipse.persistence.config.CacheIsolationType;
+
 import com.ltxc.google.csms.server.servlet.utils.EMFCSMOBILE;
 import com.ltxc.google.csms.shared.SharedConstants;
 
@@ -18,6 +21,7 @@ import java.util.List;
 @XmlRootElement
 @Table(name="CycleCount")
 @Entity
+@Cache(isolation=CacheIsolationType.ISOLATED)
 public class CycleCount implements Serializable {
 	private static final long serialVersionUID = 1L;
 
@@ -59,7 +63,7 @@ public class CycleCount implements Serializable {
     public CycleCount() {
     }
 
-
+    //for bin count
     public CycleCount(String warehouse_id, String bin_code_id, String who, CycleCountCount count)
     {
     	this.cycleType = SharedConstants.CYCLE_TYPE_BIN;
@@ -68,8 +72,10 @@ public class CycleCount implements Serializable {
     	this.who = who;
     	this.bpartId = count.getTarget();
     	this.qty = count.getQty();
+    	this.comment = count.getComment();
     }
     
+    //for part count
     public CycleCount(String warehouse_id, String bin_code_id, String bpart_id,String who,  CycleCountCount count)
     {
     	this.cycleType = SharedConstants.CYCLE_TYPE_PART;
@@ -82,6 +88,7 @@ public class CycleCount implements Serializable {
     		this.qty = 1;
     	else
     		this.qty = count.getQty();
+    	this.comment = count.getComment();
     }
     
 	public String getId() {
