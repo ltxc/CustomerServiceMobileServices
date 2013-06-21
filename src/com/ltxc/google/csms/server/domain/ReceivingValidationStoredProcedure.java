@@ -24,42 +24,45 @@ import com.ltxc.google.csms.shared.SharedConstants;
 import com.ltxc.google.csms.shared.TransactionTypeEnum;
 
 @Entity
-@NamedStoredProcedureQuery(name = "ReceivingValidation", resultClass = ReceivingValidationStoredProcedure.class, procedureName = "saltx.dbo._CSMobile_Receiving_Validation", returnsResultSet = false, parameters = {
-		@StoredProcedureParameter(queryParameter = "TransactionType", name = "TransactionType", direction = Direction.IN, type = String.class),
-		@StoredProcedureParameter(queryParameter = "WarehouseID", name = "WarehouseID", direction = Direction.IN, type = String.class),
-		@StoredProcedureParameter(queryParameter = "OurRefno", name = "OurRefno", direction = Direction.IN, type = String.class),
-		@StoredProcedureParameter(queryParameter = "LineNo", name = "LineNo", direction = Direction.IN, type = Integer.class),
-		@StoredProcedureParameter(queryParameter = "BpartID", name = "BpartID", direction = Direction.IN, type = String.class),
-		@StoredProcedureParameter(queryParameter = "SerialNo", name = "SerialNo", direction = Direction.IN, type = String.class),
-		@StoredProcedureParameter(queryParameter = "Qty", name = "Qty", direction = Direction.IN, type = Integer.class),
-		@StoredProcedureParameter(queryParameter = "InvTypeID", name = "InvTypeID", direction = Direction.IN, type = String.class),
-		@StoredProcedureParameter(queryParameter = "CompanyID", name = "CompanyID", direction = Direction.IN, type = String.class),
-		@StoredProcedureParameter(queryParameter = "CarrierID", name = "CarrierID", direction = Direction.IN, type = String.class),
-		@StoredProcedureParameter(queryParameter = "Text1", name = "Text1", direction = Direction.IN, type = String.class),
-		@StoredProcedureParameter(queryParameter = "Int1", name = "Int1", direction = Direction.IN, type = Integer.class),
-		@StoredProcedureParameter(queryParameter = "ValidationCode", name = "ValidationCode", direction = Direction.OUT, type = String.class),
-		@StoredProcedureParameter(queryParameter = "ValidationTemplate", name = "ValidationTemplate", direction = Direction.OUT, type = String.class),
-		@StoredProcedureParameter(queryParameter = "ValidationMessage", name = "ValidationMessage", direction = Direction.OUT, type = String.class),
-		@StoredProcedureParameter(queryParameter = "OutputRefno", name = "OutputRefno", direction = Direction.OUT, type = String.class),
-		@StoredProcedureParameter(queryParameter = "OrigDocLineID", name = "OrigDocLineID", direction = Direction.OUT, type = String.class),
-		@StoredProcedureParameter(queryParameter = "UndeliveredLineCount", name = "UndeliveredLineCount", direction = Direction.OUT, type = Integer.class),
-		@StoredProcedureParameter(queryParameter = "CustomerCompanyID", name = "CustomerCompanyID", direction = Direction.OUT, type = String.class),
-		@StoredProcedureParameter(queryParameter = "DestInvTypeID", name = "DestInvTypeID", direction = Direction.OUT, type = String.class),
-		@StoredProcedureParameter(queryParameter = "ValidationText", name = "ValidationText", direction = Direction.OUT, type = String.class),
-		@StoredProcedureParameter(queryParameter = "ValidationInt", name = "ValidationInt", direction = Direction.OUT, type = Integer.class),
-		@StoredProcedureParameter(queryParameter = "NodeId", name = "NodeId", direction = Direction.OUT, type = String.class),
-		@StoredProcedureParameter(queryParameter = "DestWarehouseId", name = "DestWarehouseId", direction = Direction.OUT, type = String.class),
-		@StoredProcedureParameter(queryParameter = "CconthId", name = "CconthId", direction = Direction.OUT, type = String.class),
-		@StoredProcedureParameter(queryParameter = "WarrTypeId", name = "WarrTypeId", direction = Direction.OUT, type = String.class),
-		@StoredProcedureParameter(queryParameter = "PoId", name = "PoId", direction = Direction.OUT, type = String.class),
-		@StoredProcedureParameter(queryParameter = "Priority", name = "Priority", direction = Direction.OUT, type = String.class),
-		@StoredProcedureParameter(queryParameter = "PcodeId", name = "PcodeId", direction = Direction.OUT, type = String.class),
-		@StoredProcedureParameter(queryParameter = "id", name = "id", direction = Direction.OUT, type = Integer.class), })
+@NamedStoredProcedureQuery(name = ReceivingValidationStoredProcedure.NAMED_QUERY, resultClass = ReceivingValidationStoredProcedure.class, procedureName = ReceivingValidationStoredProcedure.STOREDPROCEDURENAME, returnsResultSet = false, parameters = {
+		@StoredProcedureParameter(queryParameter = ReceivingValidationStoredProcedure.PARAM_IN_TRANSACTIONTYPE, name = ReceivingValidationStoredProcedure.PARAM_IN_TRANSACTIONTYPE, direction = Direction.IN, type = String.class),
+		@StoredProcedureParameter(queryParameter = ReceivingValidationStoredProcedure.PARAM_IN_WAREHOUSEID, name = ReceivingValidationStoredProcedure.PARAM_IN_WAREHOUSEID, direction = Direction.IN, type = String.class),
+		@StoredProcedureParameter(queryParameter = ReceivingValidationStoredProcedure.PARAM_IN_OURREFNO, name = ReceivingValidationStoredProcedure.PARAM_IN_OURREFNO, direction = Direction.IN, type = String.class),
+		@StoredProcedureParameter(queryParameter = ReceivingValidationStoredProcedure.PARAM_IN_LINENO, name = ReceivingValidationStoredProcedure.PARAM_IN_LINENO, direction = Direction.IN, type = Integer.class),
+		@StoredProcedureParameter(queryParameter = ReceivingValidationStoredProcedure.PARAM_IN_BPARTID, name = ReceivingValidationStoredProcedure.PARAM_IN_BPARTID, direction = Direction.IN, type = String.class),
+		@StoredProcedureParameter(queryParameter = ReceivingValidationStoredProcedure.PARAM_IN_SERIALNO, name = ReceivingValidationStoredProcedure.PARAM_IN_SERIALNO, direction = Direction.IN, type = String.class),
+		@StoredProcedureParameter(queryParameter = ReceivingValidationStoredProcedure.PARAM_IN_QTY, name = ReceivingValidationStoredProcedure.PARAM_IN_QTY, direction = Direction.IN, type = Integer.class),
+		@StoredProcedureParameter(queryParameter = ReceivingValidationStoredProcedure.PARAM_IN_INVTYPID, name = ReceivingValidationStoredProcedure.PARAM_IN_INVTYPID, direction = Direction.IN, type = String.class),
+		@StoredProcedureParameter(queryParameter = ReceivingValidationStoredProcedure.PARAM_IN_COMPANYID, name = ReceivingValidationStoredProcedure.PARAM_IN_COMPANYID, direction = Direction.IN, type = String.class),
+		@StoredProcedureParameter(queryParameter = ReceivingValidationStoredProcedure.PARAM_IN_CARRIERID, name = ReceivingValidationStoredProcedure.PARAM_IN_CARRIERID, direction = Direction.IN, type = String.class),
+		@StoredProcedureParameter(queryParameter = ReceivingValidationStoredProcedure.PARAM_IN_TEXT1, name = ReceivingValidationStoredProcedure.PARAM_IN_TEXT1, direction = Direction.IN, type = String.class),
+		@StoredProcedureParameter(queryParameter = ReceivingValidationStoredProcedure.PARAM_IN_INT1, name = ReceivingValidationStoredProcedure.PARAM_IN_INT1, direction = Direction.IN, type = Integer.class),
+		@StoredProcedureParameter(queryParameter = ReceivingValidationStoredProcedure.PARAM_OUT_VALIDATIONCODE, name = ReceivingValidationStoredProcedure.PARAM_OUT_VALIDATIONCODE, direction = Direction.OUT, type = String.class),
+		@StoredProcedureParameter(queryParameter = ReceivingValidationStoredProcedure.PARAM_OUT_VALIDATIONTEMPLATE, name = ReceivingValidationStoredProcedure.PARAM_OUT_VALIDATIONTEMPLATE, direction = Direction.OUT, type = String.class),
+		@StoredProcedureParameter(queryParameter = ReceivingValidationStoredProcedure.PARAM_OUT_VALIDATIONMESSAGE, name = ReceivingValidationStoredProcedure.PARAM_OUT_VALIDATIONMESSAGE, direction = Direction.OUT, type = String.class),
+		@StoredProcedureParameter(queryParameter = ReceivingValidationStoredProcedure.PARAM_OUT_OUTPUTREFNO, name = ReceivingValidationStoredProcedure.PARAM_OUT_OUTPUTREFNO, direction = Direction.OUT, type = String.class),
+		@StoredProcedureParameter(queryParameter = ReceivingValidationStoredProcedure.PARAM_OUT_OUTPUTRP, name = ReceivingValidationStoredProcedure.PARAM_OUT_OUTPUTRP, direction = Direction.OUT, type = String.class),
+		@StoredProcedureParameter(queryParameter = ReceivingValidationStoredProcedure.PARAM_OUT_ORIGDOCLINEID, name = ReceivingValidationStoredProcedure.PARAM_OUT_ORIGDOCLINEID, direction = Direction.OUT, type = String.class),
+		@StoredProcedureParameter(queryParameter = ReceivingValidationStoredProcedure.PARAM_OUT_ITEMID, name = ReceivingValidationStoredProcedure.PARAM_OUT_ITEMID, direction = Direction.OUT, type = Integer.class),
+		@StoredProcedureParameter(queryParameter = ReceivingValidationStoredProcedure.PARAM_OUT_UNDELIVEREDLINECOUNT, name = ReceivingValidationStoredProcedure.PARAM_OUT_UNDELIVEREDLINECOUNT, direction = Direction.OUT, type = Integer.class),
+		@StoredProcedureParameter(queryParameter = ReceivingValidationStoredProcedure.PARAM_OUT_CUSTOMERCOMPANYID, name = ReceivingValidationStoredProcedure.PARAM_OUT_CUSTOMERCOMPANYID, direction = Direction.OUT, type = String.class),
+		@StoredProcedureParameter(queryParameter = ReceivingValidationStoredProcedure.PARAM_OUT_DESTINVTYPEID, name = ReceivingValidationStoredProcedure.PARAM_OUT_DESTINVTYPEID, direction = Direction.OUT, type = String.class),
+		@StoredProcedureParameter(queryParameter = ReceivingValidationStoredProcedure.PARAM_OUT_VALIDATIONTEXT, name = ReceivingValidationStoredProcedure.PARAM_OUT_VALIDATIONTEXT, direction = Direction.OUT, type = String.class),
+		@StoredProcedureParameter(queryParameter = ReceivingValidationStoredProcedure.PARAM_OUT_VALIDATIONINT, name = ReceivingValidationStoredProcedure.PARAM_OUT_VALIDATIONINT, direction = Direction.OUT, type = Integer.class),
+		@StoredProcedureParameter(queryParameter = ReceivingValidationStoredProcedure.PARAM_OUT_NODEID, name = ReceivingValidationStoredProcedure.PARAM_OUT_NODEID, direction = Direction.OUT, type = String.class),
+		@StoredProcedureParameter(queryParameter = ReceivingValidationStoredProcedure.PARAM_OUT_DESTWAREHOUSEID, name = ReceivingValidationStoredProcedure.PARAM_OUT_DESTWAREHOUSEID, direction = Direction.OUT, type = String.class),
+		@StoredProcedureParameter(queryParameter = ReceivingValidationStoredProcedure.PARAM_OUT_CCONTHID , name = ReceivingValidationStoredProcedure.PARAM_OUT_CCONTHID, direction = Direction.OUT, type = String.class),
+		@StoredProcedureParameter(queryParameter = ReceivingValidationStoredProcedure.PARAM_OUT_WARRTYPEID, name = ReceivingValidationStoredProcedure.PARAM_OUT_WARRTYPEID, direction = Direction.OUT, type = String.class),
+		@StoredProcedureParameter(queryParameter = ReceivingValidationStoredProcedure.PARAM_OUT_POID, name = ReceivingValidationStoredProcedure.PARAM_OUT_POID, direction = Direction.OUT, type = String.class),
+		@StoredProcedureParameter(queryParameter = ReceivingValidationStoredProcedure.PARAM_OUT_PRIORITY, name = ReceivingValidationStoredProcedure.PARAM_OUT_PRIORITY, direction = Direction.OUT, type = String.class),
+		@StoredProcedureParameter(queryParameter = ReceivingValidationStoredProcedure.PARAM_OUT_PCODEID, name = ReceivingValidationStoredProcedure.PARAM_OUT_PCODEID, direction = Direction.OUT, type = String.class),
+		@StoredProcedureParameter(queryParameter = ReceivingValidationStoredProcedure.PARAM_OUT_ID, name = ReceivingValidationStoredProcedure.PARAM_OUT_ID, direction = Direction.OUT, type = Integer.class)})
 public class ReceivingValidationStoredProcedure implements Serializable {
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
+	public static final String NAMED_QUERY = "ReceivingValidation";
 	public static final String STOREDPROCEDURENAME = "saltx.dbo._CSMobile_Receiving_Validation";
 	public static final String PARAM_IN_TRANSACTIONTYPE = "TransactionType";
 	public static final String PARAM_IN_WAREHOUSEID = "WarehouseID";
@@ -77,7 +80,9 @@ public class ReceivingValidationStoredProcedure implements Serializable {
 	public static final String PARAM_OUT_VALIDATIONTEMPLATE = "ValidationTemplate";
 	public static final String PARAM_OUT_VALIDATIONMESSAGE = "ValidationMessage";
 	public static final String PARAM_OUT_OUTPUTREFNO = "OutputRefno";
+	public static final String PARAM_OUT_OUTPUTRP = "OutputRP";
 	public static final String PARAM_OUT_ORIGDOCLINEID = "OrigDocLineID";
+	public static final String PARAM_OUT_ITEMID = "ItemID";
 	public static final String PARAM_OUT_UNDELIVEREDLINECOUNT = "UndeliveredLineCount";
 	public static final String PARAM_OUT_CUSTOMERCOMPANYID = "CustomerCompanyID";
 	public static final String PARAM_OUT_DESTINVTYPEID = "DestInvTypeID";
@@ -90,6 +95,7 @@ public class ReceivingValidationStoredProcedure implements Serializable {
 	public static final String PARAM_OUT_POID = "PoId";
 	public static final String PARAM_OUT_PRIORITY = "Priority";
 	public static final String PARAM_OUT_PCODEID = "PcodeId";
+	public static final String PARAM_OUT_ID = "id";
 	// import
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
@@ -128,8 +134,12 @@ public class ReceivingValidationStoredProcedure implements Serializable {
 	private String validationMessage;
 
 	private String outputRefNo;
+	
+	private String outputRP;
 
 	private String origDocLineID;
+	
+	private int itemID;
 
 	private int undeliveredLineCount;
 
@@ -349,6 +359,16 @@ public class ReceivingValidationStoredProcedure implements Serializable {
 	public void setOutputRefNo(String outputRefNo) {
 		this.outputRefNo = outputRefNo;
 	}
+	
+	
+
+	public String getOutputRP() {
+		return outputRP;
+	}
+
+	public void setOutputRP(String outputRP) {
+		this.outputRP = outputRP;
+	}
 
 	public String getOrigDocLineID() {
 		return origDocLineID;
@@ -356,6 +376,16 @@ public class ReceivingValidationStoredProcedure implements Serializable {
 
 	public void setOrigDocLineID(String origDocLineID) {
 		this.origDocLineID = origDocLineID;
+	}
+	
+	
+
+	public int getItemID() {
+		return itemID;
+	}
+
+	public void setItemID(int itemID) {
+		this.itemID = itemID;
 	}
 
 	public int getUndeliveredLineCount() {
@@ -416,8 +446,8 @@ public class ReceivingValidationStoredProcedure implements Serializable {
 				this.setCarrierID(carrier.getCarrier_id());
 			this.setText1("Text1");
 			this.setInt1(1);
-			List<InventoryLineItem> lineitems = (List<InventoryLineItem>) it
-					.getLineItems();
+			@SuppressWarnings("unchecked")
+			List<InventoryLineItem> lineitems = (List<InventoryLineItem>) it.getLineItems();
 			if (lineitems != null) {
 				InventoryLineItem lineitem = lineitems.get(lineitemno);
 
@@ -495,7 +525,9 @@ public class ReceivingValidationStoredProcedure implements Serializable {
 		lineItem.setValidationTemplate(out.getValidationTemplate());
 		lineItem.setValidationMessage(out.getValidationMessage());
 		lineItem.setOutputRefNo(out.getOutputRefNo());
+		lineItem.setOutputRP(out.getOutputRP());
 		lineItem.setOrigDocLineID(out.getOrigDocLineID());
+		lineItem.setItemID(out.getItemID());
 		lineItem.setUndeliveredLineCount(out.getUndeliveredLineCount());
 		lineItem.setCustomerCompanyID(out.getCustomerCompanyID());
 		lineItem.setDestInvTypeID(out.getDestInvTypeID());
@@ -523,7 +555,7 @@ public class ReceivingValidationStoredProcedure implements Serializable {
 		try {
 
 			// etx.begin();
-			Query query = em.createNamedQuery("ReceivingValidation");
+			Query query = em.createNamedQuery(ReceivingValidationStoredProcedure.NAMED_QUERY);
 			query.setParameter(PARAM_IN_TRANSACTIONTYPE, object.transactionType);
 			query.setParameter(PARAM_IN_WAREHOUSEID, object.warehouseID);
 			query.setParameter(PARAM_IN_OURREFNO, object.ourRefNo);
@@ -550,41 +582,6 @@ public class ReceivingValidationStoredProcedure implements Serializable {
 		}
 		return result;
 	}
-	// public static ReceivingValidationStoredProcedure
-	// getResult(ReceivingValidationStoredProcedure object)
-	// {
-	// StoredProcedureCall spcall = new StoredProcedureCall();
-	// //configure the stored procedure
-	// //input param
-	// spcall.setProcedureName(STOREDPROCEDURENAME);
-	// spcall.addNamedArgument(PARAM_IN_TRANSACTIONTYPE);
-	// spcall.addNamedArgument(PARAM_IN_WAREHOUSEID);
-	// spcall.addNamedArgument(PARAM_IN_OURREFNO);
-	// spcall.addNamedArgument(PARAM_IN_LINENO,PARAM_IN_LINENO,Integer.class);
-	// spcall.addNamedArgument(PARAM_IN_BPARTID);
-	// spcall.addNamedArgument(PARAM_IN_SERIALNO);
-	// spcall.addNamedArgument(PARAM_IN_QTY,PARAM_IN_QTY,Float.class);
-	// spcall.addNamedArgument(PARAM_IN_COMPANYID);
-	// spcall.addNamedArgument(PARAM_IN_CARRIERID);
-	// spcall.addNamedArgument(PARAM_IN_TEXT1);
-	// spcall.addNamedArgument(PARAM_IN_INT1,PARAM_IN_INT1,Integer.class);
-	// //output param
-	// spcall.addNamedInOutputArgument(PARAM_OUT_VALIDATIONCODE);
-	// spcall.addNamedInOutputArgument(PARAM_OUT_VALIDATIONTEMPLATE);
-	// spcall.addNamedInOutputArgument(PARAM_OUT_VALIDATIONMESSAGE);
-	// spcall.addNamedInOutputArgument(PARAM_OUT_OUTPUTREFNO);
-	// spcall.addNamedInOutputArgument(PARAM_OUT_ORIGDOCLINEID);
-	// spcall.addNamedInOutputArgument(PARAM_OUT_UNDELIVEREDLINECOUNT,PARAM_OUT_UNDELIVEREDLINECOUNT,Integer.class);
-	// spcall.addNamedInOutputArgument(PARAM_OUT_CUSTOMERCOMPANYID);
-	// spcall.addNamedInOutputArgument(PARAM_OUT_VALIDATIONTEXT);
-	// spcall.addNamedInOutputArgument(PARAM_OUT_VALIDATIONINT,PARAM_OUT_VALIDATIONINT,Integer.class);
-	//
-	//
-	//
-	// //create query
-	// ValueReadQuery query = new ValueReadQuery();
-	// query.setCall(spcall);
-	//
-	// }
+
 
 }

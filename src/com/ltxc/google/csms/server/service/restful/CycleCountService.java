@@ -39,28 +39,28 @@ public class CycleCountService extends RestfulServiceBase {
 /************************************* Post Methods ********************************************************/
 	@POST
 	@Consumes ({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
-	@Path("/bin/{who}/{warehouseid}/{bincode}/{clear}")
-	public Response postBinCycleCount(@Context HttpServletRequest req,  List<CycleCountCount> cycleCounts, @PathParam("who") String who,@PathParam("warehouseid") String warehouse_id,@PathParam("bincode") String bin_code_id, @PathParam("clear") String isclear)
+	@Path("/bin/{who}/{warehouseid}/{bincode}/{clear}/{server_id}")
+	public Response postBinCycleCount(@Context HttpServletRequest req,  List<CycleCountCount> cycleCounts, @PathParam("who") String who,@PathParam("warehouseid") String warehouse_id,@PathParam("bincode") String bin_code_id, @PathParam("clear") String isclear, @PathParam("server_id") int server_id)
 	{
 		super.checkRequest(req);
 		if (cycleCounts == null)
 		{
 			throwInternalErrorException("Bin Cycle Counts Entity failed to be created from the http jason content.");
 		}
-		return handleBinCycleCount(req, cycleCounts, who, warehouse_id, bin_code_id, isclear);
+		return handleBinCycleCount(req, cycleCounts, who, warehouse_id, bin_code_id, isclear,server_id);
 	}
 	
 	@POST
 	@Consumes ({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
-	@Path("/part/{who}/{warehouseid}/{bincode}/{bpart}/{clear}")
-	public Response postPartCycleCount(@Context HttpServletRequest req,  List<CycleCountCount> cycleCounts, @PathParam("who") String who,@PathParam("warehouseid") String warehouse_id,@PathParam("bincode") String bin_code_id,@PathParam("bpart") String bpart_id, @PathParam("clear") String isclear)
+	@Path("/part/{who}/{warehouseid}/{bincode}/{bpart}/{clear}/{server_id}")
+	public Response postPartCycleCount(@Context HttpServletRequest req,  List<CycleCountCount> cycleCounts, @PathParam("who") String who,@PathParam("warehouseid") String warehouse_id,@PathParam("bincode") String bin_code_id,@PathParam("bpart") String bpart_id, @PathParam("clear") String isclear, @PathParam("server_id") int server_id)
 	{
 		super.checkRequest(req);
 		if (cycleCounts == null)
 		{
 			throwInternalErrorException("Part Cycle Counts Entity failed to be created from the http jason content.");
 		}
-		return handlePartCycleCount(req, cycleCounts, who, warehouse_id, bin_code_id, bpart_id, isclear);
+		return handlePartCycleCount(req, cycleCounts, who, warehouse_id, bin_code_id, bpart_id, isclear,server_id);
 	}
 	
 	
@@ -84,15 +84,16 @@ public class CycleCountService extends RestfulServiceBase {
 		String bin_code_id = cycleCountPost.getBinCodeId();
 		List<CycleCountCount> counts = cycleCountPost.getCounts();
 		String isclear = cycleCountPost.getIsclear();
+		int server_id = cycleCountPost.getServer_id();
 		Response response = null;
 		if (SharedConstants.CYCLE_TYPE_BIN.equals(cycle_type))
 		{
-			response = handleBinCycleCount(req, counts, who, warehouse_id, bin_code_id, isclear);
+			response = handleBinCycleCount(req, counts, who, warehouse_id, bin_code_id, isclear, server_id);
 		}
 		else if (SharedConstants.CYCLE_TYPE_PART.equals(cycle_type))
 		{
 			String bpart_id = cycleCountPost.getBpartId();
-			response = handlePartCycleCount(req, counts, who, warehouse_id, bin_code_id, bpart_id, isclear);
+			response = handlePartCycleCount(req, counts, who, warehouse_id, bin_code_id, bpart_id, isclear,server_id);
 		}
 		else
 		{
@@ -110,7 +111,7 @@ public class CycleCountService extends RestfulServiceBase {
 	
 	
 /***************************** help method *****************************************************/	
-	public Response handleBinCycleCount(HttpServletRequest req,  List<CycleCountCount> cycleCounts, String who,String warehouse_id,String bin_code_id, String isclear)
+	public Response handleBinCycleCount(HttpServletRequest req,  List<CycleCountCount> cycleCounts, String who,String warehouse_id,String bin_code_id, String isclear, int server_id)
 	{
 		String type = SharedConstants.CYCLE_TYPE_BIN;
 		boolean isCleared = false;
@@ -148,7 +149,7 @@ public class CycleCountService extends RestfulServiceBase {
 			for(CycleCountCount count:cycleCounts)
 			{
 				try{
-					CycleCount cycleCount = new CycleCount(warehouse_id, bin_code_id, who, count);
+					CycleCount cycleCount = new CycleCount(warehouse_id, bin_code_id, who, count, server_id);
 					cycleCount.setLastupdated(process_date);
 					CycleCount.saveCycleCountEntry(cycleCount,!isCleared);
 					
@@ -188,7 +189,7 @@ public class CycleCountService extends RestfulServiceBase {
 		return builder.build();
 	}
 	
-	public Response handlePartCycleCount(HttpServletRequest req,  List<CycleCountCount> cycleCounts, String who,String warehouse_id,String bin_code_id,String bpart_id, String isclear)
+	public Response handlePartCycleCount(HttpServletRequest req,  List<CycleCountCount> cycleCounts, String who,String warehouse_id,String bin_code_id,String bpart_id, String isclear, int server_id)
 	{
 		
 		String type = SharedConstants.CYCLE_TYPE_PART;		
@@ -227,7 +228,7 @@ public class CycleCountService extends RestfulServiceBase {
 			for(CycleCountCount count:cycleCounts)
 			{
 				try{
-					CycleCount cycleCount = new CycleCount(warehouse_id, bin_code_id,bpart_id, who, count);
+					CycleCount cycleCount = new CycleCount(warehouse_id, bin_code_id,bpart_id, who, count,server_id);
 					cycleCount.setLastupdated(process_date);
 					CycleCount.saveCycleCountEntry(cycleCount,!isCleared);
 					

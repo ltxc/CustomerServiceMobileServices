@@ -1,0 +1,1 @@
+<row number="%{lineitemno}"><inv_type_id><![CDATA[%{dest_inv_type_id}]]></inv_type_id><bin_code_id><![CDATA[%{bin_code_id}]]></bin_code_id><qty_received><![CDATA[%{qty}]]></qty_received><ldmnd_stat_id><![CDATA[900]]></ldmnd_stat_id><bo_search_keys><item><name>orig_doc_line_id</name><value><![CDATA[%{origdoclineid}]]></value></item></bo_search_keys></row>

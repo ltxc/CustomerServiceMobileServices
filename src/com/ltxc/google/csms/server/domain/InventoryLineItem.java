@@ -83,7 +83,15 @@ public class InventoryLineItem implements Serializable, TemplateBase {
     
     @XmlTransient
     @Transient
+    private String outputRP;
+    
+    @XmlTransient
+    @Transient
     private String origDocLineID;
+
+    @XmlTransient
+    @Transient
+    private int itemID;
     
     @XmlTransient
     @Transient
@@ -135,8 +143,10 @@ public class InventoryLineItem implements Serializable, TemplateBase {
     @Transient
     private String nodeId; //Node ID
     
+
+    
+    
     @XmlTransient
-    @Transient
     public int getValidationCode() {
 		return validationCode;
 	}
@@ -173,6 +183,16 @@ public class InventoryLineItem implements Serializable, TemplateBase {
 		this.outputRefNo = outputRefNo;
 	}
 
+	
+	@XmlTransient
+	public String getOutputRP() {
+		return outputRP;
+	}
+
+	public void setOutputRP(String outputRP) {
+		this.outputRP = outputRP;
+	}
+
 	@XmlTransient
 	public String getOrigDocLineID() {
 		return origDocLineID;
@@ -180,6 +200,16 @@ public class InventoryLineItem implements Serializable, TemplateBase {
 
 	public void setOrigDocLineID(String origDocLineID) {
 		this.origDocLineID = origDocLineID;
+	}
+
+	
+	@XmlTransient
+	public int getItemID() {
+		return itemID;
+	}
+
+	public void setItemID(int itemID) {
+		this.itemID = itemID;
 	}
 
 	@XmlTransient
@@ -370,6 +400,7 @@ public class InventoryLineItem implements Serializable, TemplateBase {
 		this.process_message = process_message;
 	}
 
+	@XmlTransient
 	public String getXmldoc() {
 		return xmldoc;
 	}
@@ -378,6 +409,7 @@ public class InventoryLineItem implements Serializable, TemplateBase {
 		this.xmldoc = xmldoc;
 	}
 
+	@XmlTransient
 	public int getVersion() {
 		return this.version;
 	}
@@ -423,7 +455,11 @@ public class InventoryLineItem implements Serializable, TemplateBase {
 		maps.put(SharedConstants.Attribute_Inventory_PO_ID, poId!=null?poId:"");
 		maps.put(SharedConstants.Attribute_Inventory_Pcode_ID, pcodeId!=null?pcodeId:"");
 		
-		
+		//stored procedure call output
+		maps.put(SharedConstants.Attribute_Inventory_OUTPUTREFNO, outputRefNo!=null?outputRefNo:"");
+		maps.put(SharedConstants.Attribute_Inventory_OUTPUTRP, outputRP!=null?outputRP:"");
+		maps.put(SharedConstants.Attribute_Inventory_DESTINVTYPEID, destInvTypeID!=null?destInvTypeID:"");
+		maps.put(SharedConstants.Attribute_Inventory_ORIGDOCLINEID, origDocLineID!=null?origDocLineID:"");
 		return maps;
 	}
 	

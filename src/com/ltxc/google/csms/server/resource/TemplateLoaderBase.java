@@ -4,10 +4,8 @@ import java.io.InputStream;
 import java.io.StringWriter;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
 import org.apache.commons.io.IOUtils;
 
-import com.ltxc.google.csms.server.domain.InventoryTransaction;
 
 public class TemplateLoaderBase {
 	private static Logger logger = Logger
@@ -17,7 +15,7 @@ public class TemplateLoaderBase {
 		
 		try{
 			
-			InputStream inputStream = InventoryTransaction.class.getClassLoader().getResourceAsStream(templateFilePath);
+			InputStream inputStream = TemplateLoaderBase.class.getClassLoader().getResourceAsStream(templateFilePath);
 			StringWriter writer = new StringWriter();
 			IOUtils.copy(inputStream, writer, "UTF-8");
 			String templateString = writer.toString();

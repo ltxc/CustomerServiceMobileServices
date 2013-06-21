@@ -125,11 +125,13 @@ public class InventoryService extends RestfulServiceBase {
 					inventoryTransaction.setTo_warehouse(findWarehouseById(inventoryTransaction.getTo_warehouse().getWarehouse_id()));
 			
 				
+				if(inventoryTransaction.getCreatedDate()==null)
+					inventoryTransaction.setCreatedDate(process_date);
+				if(inventoryTransaction.getProcessDate()==null)
+					inventoryTransaction.setProcessDate(process_date);
+				
 				//"Process %s transaction with type:%s and ipad_id:%s at server time %s. Status:%s. Message:%s.
-//				inventoryTransaction.setProcess_date(process_date);
-//				inventoryTransaction.setProcess_message("Start Processing...");
-//				inventoryTransaction.setProcess_status(ProcessStatusEnum.PROCESSING.getProcessStatusName());
-//				inventoryTransaction.persist();
+
 			      if(inventoryTransaction.getInventoryLineItems().size()>0)
 			      {
 			    	  for(InventoryLineItem lineItem:inventoryTransaction.getInventoryLineItems())
@@ -181,11 +183,11 @@ public class InventoryService extends RestfulServiceBase {
 		inventoryTransaction.setActioncode(0);
 		Response response = transactionService.processTransaction(this, req, inventoryTransaction,new ITransactionService() {
 			
-			@Override
-			public TransactionBase searchExistingTransaction(TransactionBase transaction) {
-				return InventoryTransaction.findInventoryTransactionByIPadID(transaction.getTransactionID());
-			}
-			
+//			@Override
+//			public TransactionBase searchExistingTransaction(TransactionBase transaction) {
+//				return InventoryTransaction.findInventoryTransactionByIPadID(transaction.getTransactionID());
+//			}
+//			
 			@Override
 			public void preLoad(TransactionBase transaction, ProcessResult processResult) {
 				// TODO Auto-generated method stub

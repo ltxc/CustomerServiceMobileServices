@@ -5,21 +5,21 @@ import com.ltxc.google.csms.shared.TransactionTypeEnum;
 
 public class LoaderFactory {
 	private static LoaderFactory instance;
-	private WebServiceAPI _webServiceAPI;
+	private AAWebServiceAPI _webServiceAPI;
 	private LoaderFactory() throws Exception 
 	{
-		_webServiceAPI = WebServiceAPIFactory.get().init(SharedConstants.URL_AsteaAlliance_API, SharedConstants.AA_UserName, SharedConstants.AA_Password, SharedConstants.AA_Profile).getWebServiceAPI();
+		_webServiceAPI = AAWebServiceAPIFactory.get().init(SharedConstants.URL_AsteaAlliance_API, SharedConstants.AA_UserName, SharedConstants.AA_Password, SharedConstants.AA_Profile).getWebServiceAPI();
 	}
 	
 	
 	
-	public WebServiceAPI getWebServiceAPI() {
+	public AAWebServiceAPI getWebServiceAPI() {
 		return _webServiceAPI;
 	}
 
 
 
-	public void setWebServiceAPI(WebServiceAPI _webServiceAPI) {
+	public void setWebServiceAPI(AAWebServiceAPI _webServiceAPI) {
 		this._webServiceAPI = _webServiceAPI;
 	}
 
@@ -42,7 +42,7 @@ public class LoaderFactory {
 			switch(type)
 			{
 			case MRC: loader  =new  InventoryReceivingLoader();break;
-			case DRC: loader  =new  InventoryReceivingLoader();break;
+			case DRC: loader  =new  InventoryReceivingDRCLoader();break;
 			case RRFV: loader  =new  InventoryReceivingLoader();break;
 			case RFR: loader  =new  InventoryReceivingLoader();break;
 			case PICK: loader = new InventoryShippingLoader();break;

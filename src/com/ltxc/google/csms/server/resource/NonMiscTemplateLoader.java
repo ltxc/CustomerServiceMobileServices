@@ -21,7 +21,7 @@ public class NonMiscTemplateLoader extends TemplateLoaderBase implements
 	public static final String DRCCLOSETEMPLATEITEM = "com/ltxc/google/csms/server/resource/NonMiscReceiveDRCCloseFullReceivelItem.xml";
 	public static final String DRCFULLRECEIVEL= "com/ltxc/google/csms/server/resource/NonMiscReceiveDRCFullReceivel.xml";
 	public static final String NONDRCFULLRECEIVEL= "com/ltxc/google/csms/server/resource/NonMiscReceiveNonDRCFullReceivel.xml";
-	public static final String RFR2ACTION= "com/ltxc/google/csms/server/resource/NonMiscReceiveRFR2Action.xml";
+	public static final String RRFV2Action= "com/ltxc/google/csms/server/resource/NonMiscReceiveRRFV2Action.txt";
 	public static final String NONMISCRECEIVEHEADER= "com/ltxc/google/csms/server/resource/NonMiscReceiveHeaderTemplate.xml";
 	
 	public static final String OUTPUTTEMPLATE_DRC1= "DRC1";
@@ -79,19 +79,19 @@ public class NonMiscTemplateLoader extends TemplateLoaderBase implements
 		String drc_full_receivel = "";
 		String drc_close_action = "";
 		Map<String, Object> map = new HashMap<String, Object>();
-		if(validationTemplate.equalsIgnoreCase(OUTPUTTEMPLATE_DRC1))
-		{
-			
-			//drc
-			drc_full_receivel = loadDRCFullReceivel(lineItem);
-			if(lineItem.getUndeliveredLineCount()!=0)
-				drc_close_action = loadDRCClose(lineItem);
-		}
-		else
-		{
+//		if(validationTemplate.equalsIgnoreCase(OUTPUTTEMPLATE_DRC1))
+//		{
+//			
+//			//drc
+//			drc_full_receivel = loadDRCFullReceivel(lineItem);
+//			if(lineItem.getUndeliveredLineCount()!=0)
+//				drc_close_action = loadDRCClose(lineItem);
+//		}
+//		else
+//		{
 
 			//rfr1, rfr2, rrfv1 and rrfv2
-			if(validationTemplate.equalsIgnoreCase(OUTPUTTEMPLATE_RFR2))
+			if(validationTemplate.equalsIgnoreCase(OUTPUTTEMPLATE_RRFV2))  //removed validationTemplate.equalsIgnoreCase(OUTPUTTEMPLATE_RFR2)||
 			{
 				rfr2_action = loadRFR2Action(lineItem, type);
 				
@@ -99,7 +99,7 @@ public class NonMiscTemplateLoader extends TemplateLoaderBase implements
 			nondrc_full_receivel = loadNonDRCFullReceivel(lineItem);
 			
 
-		}
+//		}
 
 		map.put(SharedConstants.Attribute_Inventory_RFR2ACTION, rfr2_action);
 		map.put(SharedConstants.Attribute_Inventory_NONDRCFULLRECEIVEL, nondrc_full_receivel);
@@ -108,6 +108,7 @@ public class NonMiscTemplateLoader extends TemplateLoaderBase implements
 		
 		map.put(SharedConstants.Attribute_Inventory_Ref_Doc_Type_Id, type.getRef_doc_type_id());
 		map.put(SharedConstants.Attribute_Inventory_OUTPUTREFNO, lineItem.getOutputRefNo());
+		
 		map.put(SharedConstants.Attribute_Inventory_Received_By, inv.getCreated_by());
 		map.put(SharedConstants.Attribute_Inventory_To_Warehouse_ID, inv.getTo_warehouse().getWarehouse_id());
 
@@ -132,6 +133,7 @@ public class NonMiscTemplateLoader extends TemplateLoaderBase implements
 
 		Map<String, Object> map = new HashMap<String, Object>();
 		map.put(SharedConstants.Attribute_Inventory_OUTPUTREFNO, lineItem.getOutputRefNo());
+		map.put(SharedConstants.Attribute_Inventory_OUTPUTRP, lineItem.getOutputRP());
 		map.put(SharedConstants.Attribute_Inventory_CUSTOMERCOMPANYID,lineItem.getCustomerCompanyID());
 		map.put(SharedConstants.Attribute_Inventory_BPart_ID,lineItem.getBpart_id());
 		map.put(SharedConstants.Attribute_Inventory_Serial_No,lineItem.getSerial_no());
@@ -143,10 +145,10 @@ public class NonMiscTemplateLoader extends TemplateLoaderBase implements
 		map.put(SharedConstants.Attribute_Inventory_PO_ID,lineItem.getPoId());
 		map.put(SharedConstants.Attribute_Inventory_Priority,lineItem.getPriority());
 		map.put(SharedConstants.Attribute_Inventory_Pcode_ID,lineItem.getPcodeId());
-		
+		map.put(SharedConstants.Attribute_Inventory_ITEMID, lineItem.getItemID());
 
 		
-		String template = loadTemplateFile(RFR2ACTION);
+		String template = loadTemplateFile(RRFV2Action);
 		String v = StringHelper.format(template, map);
 		return v;
 	}
@@ -167,47 +169,47 @@ public class NonMiscTemplateLoader extends TemplateLoaderBase implements
 		return v;
 	}
 	
-	private String loadDRCFullReceivel(InventoryLineItem lineItem)
-	{
-
-		Map<String, Object> map = new HashMap<String, Object>();
-		map.put(SharedConstants.Attribute_Inventory_Inv_Type_ID,lineItem.getDestInvTypeID());
-		map.put(SharedConstants.Attribute_Inventory_Bin_Code_ID,lineItem.getBin_code_id());
-		map.put(SharedConstants.Attribute_Inventory_QTY,Float.toString(lineItem.getQty()));
-		map.put(SharedConstants.Attribute_Inventory_ORIGDOCLINEID,lineItem.getOrigDocLineID());
-		String template = loadTemplateFile(DRCFULLRECEIVEL);
-		String v = StringHelper.format(template, map);
-		return v;
-	}
-	
-
-	
-	private String loadDRCClose(InventoryLineItem lineItem)
-	{
-		StringBuilder sb = new StringBuilder();
-		int count = lineItem.getUndeliveredLineCount();
-		for(int i=0; i<count;i++)
-		{
-			String sitem = loadDRCCloseItem(i, lineItem.getDestInvTypeID());
-			sb.append(sitem);
-		}
-		
-		Map<String, Object> map = new HashMap<String, Object>();
-		map.put(SharedConstants.Attribute_Inventory_DRCCLOSEITEM, sb.toString());
-		String template = loadTemplateFile(DRCCLOSETEMPLATE);
-		String v = StringHelper.format(template, map);		
-		return v;
-	}
-	
-	private String loadDRCCloseItem(int index, String inv_type_id)
-	{
-
-		Map<String, Object> map = new HashMap<String, Object>();
-		map.put(SharedConstants.Attribute_Inventory_Inv_Type_ID, inv_type_id);
-		map.put(SharedConstants.Attribute_Inventory_INDEX,Integer.toString(index+1));
-		String template = loadTemplateFile(DRCCLOSETEMPLATEITEM);
-		String v = StringHelper.format(template, map);
-		return v;
-	}
+//	private String loadDRCFullReceivel(InventoryLineItem lineItem)
+//	{
+//
+//		Map<String, Object> map = new HashMap<String, Object>();
+//		map.put(SharedConstants.Attribute_Inventory_Inv_Type_ID,lineItem.getDestInvTypeID());
+//		map.put(SharedConstants.Attribute_Inventory_Bin_Code_ID,lineItem.getBin_code_id());
+//		map.put(SharedConstants.Attribute_Inventory_QTY,Float.toString(lineItem.getQty()));
+//		map.put(SharedConstants.Attribute_Inventory_ORIGDOCLINEID,lineItem.getOrigDocLineID());
+//		String template = loadTemplateFile(DRCFULLRECEIVEL);
+//		String v = StringHelper.format(template, map);
+//		return v;
+//	}
+//	
+//
+//	
+//	private String loadDRCClose(InventoryLineItem lineItem)
+//	{
+//		StringBuilder sb = new StringBuilder();
+//		int count = lineItem.getUndeliveredLineCount();
+//		for(int i=0; i<count;i++)
+//		{
+//			String sitem = loadDRCCloseItem(i, lineItem.getDestInvTypeID());
+//			sb.append(sitem);
+//		}
+//		
+//		Map<String, Object> map = new HashMap<String, Object>();
+//		map.put(SharedConstants.Attribute_Inventory_DRCCLOSEITEM, sb.toString());
+//		String template = loadTemplateFile(DRCCLOSETEMPLATE);
+//		String v = StringHelper.format(template, map);		
+//		return v;
+//	}
+//	
+//	private String loadDRCCloseItem(int index, String inv_type_id)
+//	{
+//
+//		Map<String, Object> map = new HashMap<String, Object>();
+//		map.put(SharedConstants.Attribute_Inventory_Inv_Type_ID, inv_type_id);
+//		map.put(SharedConstants.Attribute_Inventory_INDEX,Integer.toString(index+1));
+//		String template = loadTemplateFile(DRCCLOSETEMPLATEITEM);
+//		String v = StringHelper.format(template, map);
+//		return v;
+//	}
 	
 }

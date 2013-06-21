@@ -669,6 +669,31 @@ public class ShippingTransaction implements Serializable, TransactionBase {
 	@Override
 	public int getProcessActionCode() {
 		return this.actioncode;
+	}
+
+	@Override
+	public Date getCreatedDate() {
+		
+		return this.created_date;
+	}
+
+	@Override
+	public void setCreatedDate(Date date) {
+		this.created_date = date;
+	}
+
+	@Override
+	public void setProcessDate(Date date) {
+		this.process_date = date;
 	}	
-	
+	@Override
+	public void setProcessActionCode(int actioncode) {
+		this.actioncode = actioncode;
+		
+	}
+
+	@Override
+	public TransactionBase searchTransactionByIPADID(String ipadid) {
+		return ShippingTransaction.findShippingTransactionByIPadID(ipadid);
+	}
 }

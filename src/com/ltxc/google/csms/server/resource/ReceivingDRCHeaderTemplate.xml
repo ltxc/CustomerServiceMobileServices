@@ -1,0 +1,2 @@
+<root xmlns:dt="urn:schemas-microsoft-com:datatypes"><session alias="" email=""><state bc_name="receive"><action name="data"><main><row number="1"><receiveh_id status="0" len="30" in_var="strReceiveHId"><![CDATA[%{outputrefno}]]></receiveh_id></row></main>
+<full_receivel>%{lineitems}</full_receivel></action></state></session></root>

@@ -25,13 +25,17 @@ import com.ltxc.google.csms.server.domain.Carrier;
 import com.ltxc.google.csms.server.domain.Company;
 import com.ltxc.google.csms.server.domain.CycleCount;
 import com.ltxc.google.csms.server.domain.CycleCountMaster;
+import com.ltxc.google.csms.server.domain.InventoryTransaction;
 import com.ltxc.google.csms.server.domain.ManAdjustReason;
+import com.ltxc.google.csms.server.domain.ProcessResult;
 import com.ltxc.google.csms.server.domain.Queries;
 import com.ltxc.google.csms.server.domain.ShipmentInstructions;
+import com.ltxc.google.csms.server.domain.TransactionBase;
 //import com.ltxc.google.csms.server.domain.ShippingList;
 import com.ltxc.google.csms.server.domain.ViewShippingList;
 import com.ltxc.google.csms.server.domain.Warehouse;
 import com.ltxc.google.csms.shared.SharedConstants;
+import com.ltxc.google.csms.shared.TransactionTypeEnum;
 
 @Path("/synch")
 public class SynchService extends RestfulServiceBase {
@@ -72,6 +76,48 @@ public class SynchService extends RestfulServiceBase {
 						builder = Response.ok(entity, req.getContentType()).status(status);
 		}
 		return builder.build();
+	}
+	
+	@GET
+	@Consumes ({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
+	@Path("/processresult")
+	public Response getProcessResult(@Context HttpServletRequest req,  @QueryParam("ipadid") String ipad_id, @QueryParam("type") String type)
+	{
+		TransactionTypeEnum tType = TransactionTypeEnum.NONE;
+		Response response = null;
+		try{
+			tType = TransactionTypeEnum.parse(type);
+			
+		}catch(Exception xe)
+		{
+			super.throwInternalErrorException("Invalid transaction type "+type+". Please contact system adminstrator.");
+		}
+		
+		TransactionService transactionService = new TransactionService(SharedConstants.RESET_INTERVAL);
+		TransactionBase transaction = TransactionFactory.get().generate(tType);
+		transaction.setIpad_id(ipad_id);
+		transaction.setProcessActionCode(0);
+		response = transactionService.processTransaction(this, req, transaction,new ITransactionService() {
+			
+//			@Override
+//			public TransactionBase searchExistingTransaction(TransactionBase transaction) {
+//				return InventoryTransaction.findInventoryTransactionByIPadID(transaction.getTransactionID());
+//			}
+			
+			@Override
+			public void preLoad(TransactionBase transaction, ProcessResult processResult) {
+				// TODO Auto-generated method stub
+				
+			}
+			
+			@Override
+			public void postLoad(TransactionBase transaction,
+					ProcessResult processResult) {
+				// TODO Auto-generated method stub
+				
+			}
+		});
+		return response;
 	}
 	
 	

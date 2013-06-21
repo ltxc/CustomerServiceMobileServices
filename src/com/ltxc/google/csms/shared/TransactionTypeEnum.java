@@ -6,13 +6,15 @@ public enum TransactionTypeEnum {
 	NONE("none","none","none",0),
 	MRC("MRC","misc_receive","400",1),
 	DRC("DRC","receive_via_shiplist","300",2),
-	RRFV("RRFV","receive_via_vendor","800",4),
-	RFR("RFR","receive_via_repair","900",5),
-	PICK("PICK","allocated to picked","none",6),
-	SHIP("SHIP","picked to shipped","none",7),
-	PICKLIST("PICKLIST","picklistopen to picked","none",8),
-	SHIPLIST("SHIPLIST","picked to picklistopen","none",9),
-	ALLOCATEDSHIPLIST("ALLOCATEDSHIPLIST","allocated to shiplistopen","none",10);	
+	DRCCREATERC("DRC","receive_via_shiplist","300",3),
+	DRCCLOSERC("DRC","receive_via_shiplist","300",4),
+	RRFV("RRFV","receive_via_vendor","800",5),
+	RFR("RFR","receive_via_repair","900",6),
+	PICK("PICK","allocated to picked","none",7),
+	SHIP("SHIP","picked to shipped","none",8),
+	PICKLIST("PICKLIST","picklistopen to picked","none",9),
+	SHIPLIST("SHIPLIST","picked to picklistopen","none",10),
+	ALLOCATEDSHIPLIST("ALLOCATEDSHIPLIST","allocated to shiplistopen","none",11);	
 	
 
 	public String getTransactionTypeName() {

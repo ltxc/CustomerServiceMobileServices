@@ -144,12 +144,12 @@ public class ShippingService extends RestfulServiceBase {
 				TransactionService transactionService = new TransactionService(SharedConstants.RESET_INTERVAL);
 				Response response = transactionService.processTransaction(this, req, shippingTransaction, new ITransactionService() {
 					
-					@Override
-					public TransactionBase searchExistingTransaction(TransactionBase transaction) {
-						ShippingTransaction shippingTransaction = (ShippingTransaction)transaction;
-						return ShippingTransaction.findShippingTransactionByIPadID(shippingTransaction.getIpad_id());
-						
-					}
+//					@Override
+//					public TransactionBase searchExistingTransaction(TransactionBase transaction) {
+//						ShippingTransaction shippingTransaction = (ShippingTransaction)transaction;
+//						return ShippingTransaction.findShippingTransactionByIPadID(shippingTransaction.getIpad_id());
+//						
+//					}
 					
 					@Override
 					public void preLoad(TransactionBase transaction,
@@ -190,10 +190,10 @@ public class ShippingService extends RestfulServiceBase {
 			shippingTransaction.setActioncode(0);
 			Response response = transactionService.processTransaction(this, req, shippingTransaction,new ITransactionService() {
 				
-				@Override
-				public TransactionBase searchExistingTransaction(TransactionBase transaction) {
-					return ShippingTransaction.findShippingTransactionByIPadID(transaction.getTransactionID());
-				}
+//				@Override
+//				public TransactionBase searchExistingTransaction(TransactionBase transaction) {
+//					return ShippingTransaction.findShippingTransactionByIPadID(transaction.getTransactionID());
+//				}
 				
 				@Override
 				public void preLoad(TransactionBase transaction, ProcessResult processResult) {

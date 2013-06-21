@@ -1,0 +1,11 @@
+<state bc_name="inventory_item">
+	<action name="data">
+		<main>
+			<row number="1">
+				<item_id dtype="int" in_var="" out_var="">%{itemid}</item_id>
+				<bpart_id>%{bpart_id}</bpart_id>
+			</row>
+		</main>
+	</action>
+</state>
+

@@ -66,7 +66,7 @@ public class MiscTemplateLoader extends TemplateLoaderBase implements
 
 		} catch (Exception xe) {
 			xe.printStackTrace();
-			logger.log(Level.SEVERE, "TemplateLoaderFactory:generateAPIXml - "
+			logger.log(Level.SEVERE, "TemplateLoaderFactory:generateAPIXmlLineByLine - "
 					+ xe.getMessage());
 		}
 		return null;

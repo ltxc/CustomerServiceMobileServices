@@ -1,3 +1,2 @@
 # Module customerservicemobileservices
 # RPC service class, partial path of RPC policy file
-com.ltxc.google.csms.client.GreetingService, 47FFC08F6342B2617147EAB9E970E7CF.gwt.rpc

@@ -11,23 +11,23 @@ import com.ltxc.google.csms.server.domain.InventoryTransaction;
 import com.ltxc.google.csms.server.domain.ReceivingValidationStoredProcedure;
 import com.ltxc.google.csms.server.domain.TransactionBase;
 import com.ltxc.google.csms.server.resource.TemplateLoaderFactory;
-import com.ltxc.google.csms.server.service.WebServiceAPI.WebServiceAPIDelegate;
+import com.ltxc.google.csms.server.service.AAWebServiceAPI.WebServiceAPIDelegate;
 import com.ltxc.google.csms.shared.ProcessStatusEnum;
 import com.ltxc.google.csms.shared.TransactionTypeEnum;
 
 /***
  * 
- * @author JLU Miscellaneous Loader
+ * @author JLU Receiving Loader without DRC - via shiplist
  */
 public class InventoryReceivingLoader implements ILoader {
 	private static Logger logger = Logger
 			.getLogger(InventoryReceivingLoader.class.getName());
-	private WebServiceAPI _webServiceAPI;
+	private AAWebServiceAPI _webServiceAPI;
 
 	@Override
 	public boolean load(TransactionBase tb) {
 		boolean isSuccess = false;
-		final Date process_date = Calendar.getInstance().getTime();
+		//final Date process_date = Calendar.getInstance().getTime();
 		final InventoryTransaction transaction = (InventoryTransaction) tb;
 		//set loading status
 
@@ -35,7 +35,7 @@ public class InventoryReceivingLoader implements ILoader {
 			if (transaction == null)
 				throw new LoaderException(
 						"InventoryMSRLoader:load - transaction object is not set yet...");
-			transaction.setProcess_date(process_date);
+			//transaction.setProcess_date(process_date);
 			transaction.setProcess_message("Start loading... If you see this message, it means loading failed...");
 			transaction.setProcess_status(ProcessStatusEnum.PROCESSING.getProcessStatusName());
 			transaction.persist();
@@ -103,9 +103,9 @@ public class InventoryReceivingLoader implements ILoader {
 								//transaction.setXmldoc(xmlTemplate);
 								String result = proxy.sendSynchronic(sessionID,
 										xmlTemplate);
-								WebServiceResult wsr = new WebServiceResult(
+								AAWebServiceResult wsr = new AAWebServiceResult(
 										result);
-								if (wsr.parse()) {
+								if (wsr.parse(null)) {
 									if (wsr.isSuccess()) {
 										linesb.append("Line ").append(transaction.getLineItemNumber(i)).append(":").append(wsr.getResult()).append(";").append(lineItem.getValidationMessage());
 									} else {
@@ -139,10 +139,9 @@ public class InventoryReceivingLoader implements ILoader {
 								.getProcessStatusName());
 						transaction.setProcess_message(xe.getMessage());
 					}
-					finally{
-						transaction.setProcess_date(process_date);
-						
-					}
+//					finally{
+//						transaction.setProcess_date(process_date);						
+//					}
 					return isSuccess;
 				}
 
@@ -171,7 +170,7 @@ public class InventoryReceivingLoader implements ILoader {
 	}
 
 	@Override
-	public void setWebServiceAPI(WebServiceAPI _webServiceAPI)
+	public void setWebServiceAPI(AAWebServiceAPI _webServiceAPI)
 			throws LoaderException {
 		if (_webServiceAPI != null)
 			this._webServiceAPI = _webServiceAPI;

@@ -12,14 +12,14 @@ import com.ltxc.google.csms.server.domain.ShippingLineItem;
 import com.ltxc.google.csms.server.domain.ShippingTransaction;
 import com.ltxc.google.csms.server.domain.TransactionBase;
 import com.ltxc.google.csms.server.resource.TemplateLoaderFactory;
-import com.ltxc.google.csms.server.service.WebServiceAPI.WebServiceAPIDelegate;
+import com.ltxc.google.csms.server.service.AAWebServiceAPI.WebServiceAPIDelegate;
 import com.ltxc.google.csms.shared.ProcessStatusEnum;
 import com.ltxc.google.csms.shared.TransactionTypeEnum;
 
 public class InventoryShippingLoader implements ILoader {
 	private static Logger logger = Logger
 			.getLogger(InventoryShippingLoader.class.getName());
-	private WebServiceAPI _webServiceAPI;
+	private AAWebServiceAPI _webServiceAPI;
 	@Override
 	public boolean load(TransactionBase tb) {
 		boolean isSuccess = false;
@@ -67,9 +67,9 @@ public class InventoryShippingLoader implements ILoader {
 							transaction.setXmldoc(xmlTemplate);
 							String result = proxy.sendSynchronic(sessionID,
 									xmlTemplate);
-							WebServiceResult wsr = new WebServiceResult(
+							AAWebServiceResult wsr = new AAWebServiceResult(
 									result);
-							if (wsr.parse()) {
+							if (wsr.parse(null)) {
 								if (wsr.isSuccess()) {
 									sb.append(":").append(wsr.getResult()).append(";");
 									isSuccess = true;
@@ -152,7 +152,7 @@ public class InventoryShippingLoader implements ILoader {
 	}
 
 	@Override
-	public void setWebServiceAPI(WebServiceAPI _webServiceAPI)
+	public void setWebServiceAPI(AAWebServiceAPI _webServiceAPI)
 			throws LoaderException {
 		if (_webServiceAPI != null)
 			this._webServiceAPI = _webServiceAPI;

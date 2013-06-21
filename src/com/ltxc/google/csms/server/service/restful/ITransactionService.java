@@ -12,5 +12,5 @@ import com.ltxc.google.csms.server.domain.TransactionBase;
 public interface ITransactionService {
 	void preLoad(TransactionBase transaction, ProcessResult processResult);
 	void postLoad(TransactionBase transaction, ProcessResult processResult);
-	TransactionBase searchExistingTransaction(TransactionBase transaction);	
+	//TransactionBase searchExistingTransaction(TransactionBase transaction);	
 }

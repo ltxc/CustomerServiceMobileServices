@@ -5,6 +5,7 @@
  
 //transaction load
 http://srv-tpgen-nor.ltx-credence.com/csmobile/rest/inventory/load
+ http://127.0.0.1:8888/rest/inventory/load
 
     {
        "carrier":

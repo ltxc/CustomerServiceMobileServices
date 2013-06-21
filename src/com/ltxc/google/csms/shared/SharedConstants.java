@@ -124,11 +124,16 @@ public class SharedConstants {
 	public static String Attribute_Inventory_DRCCLOSE = "drc_close";
 	public static String Attribute_Inventory_DRCCLOSEITEM = "drc_close_item";
 	public static String Attribute_Inventory_ORIGDOCLINEID = "origdoclineid";
+	public static String Attribute_Inventory_ITEMID = "itemid";
 	public static String Attribute_Inventory_CUSTOMERCOMPANYID = "customercompanyid";
 	public static String Attribute_Inventory_OUTPUTREFNO = "outputrefno";
+	public static String Attribute_Inventory_OUTPUTRP = "outputrp";
 	public static String Attribute_Inventory_RFR2ACTION = "rfr2_action";
 	public static String Attribute_Inventory_NONDRCFULLRECEIVEL = "nondrc_full_receivel";
 	public static String Attribute_Inventory_DRCFULLRECEIVEL = "drc_full_receivel";
+	public static String Attribute_Inventory_DESTINVTYPEID = "dest_inv_type_id";
+	
+
 	//public static String Attribute_Inventory_
 	
 	//Shipping
@@ -179,4 +184,10 @@ public class SharedConstants {
 	public static String Exception_ValidationText_NotExist = "No extra information has been returned from Validation Stored Procedure...";
 	
 	public static String Exception_CycleCount_NoCount = "No Cycle Count Items was available in the payload...";
+	
+	
+	//Messages
+	//DRC Receiving
+	public static String Message_DRC_ReceivingSuccess = "All submitted line items have been received successfully.";
+	public static String Message_DRC_ReceivingWarning = "Warning!!! Not all submitted line items have been received successfully";
 }

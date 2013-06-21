@@ -62,7 +62,8 @@ public class CycleCountMaster implements Serializable {
 	@Column(name="warehouse_id")
 	private String warehouseId;
 	
-	
+	@Column(name="isserialized")
+	private int isserialized=0;
 
     public CycleCountMaster() {
     }
@@ -147,6 +148,14 @@ public class CycleCountMaster implements Serializable {
 
 	
 	
+	public int getIsserialized() {
+		return isserialized;
+	}
+
+	public void setIsserialized(int isserialized) {
+		this.isserialized = isserialized;
+	}
+
 	public int getQty() {
 		return qty;
 	}
@@ -371,7 +380,7 @@ public class CycleCountMaster implements Serializable {
 	      query.setParameter(1,warehouse_id);
 	      query.setParameter(2,bin_code_id);
 	      query.setParameter(3, bpart_id);
-	      int i = query.executeUpdate();
+	      query.executeUpdate();
 	      tx.commit();
 	      isUpdated = true;
 	    }catch (NoResultException ne) {

@@ -4,6 +4,6 @@ import com.ltxc.google.csms.server.domain.TransactionBase;
 
 public interface ILoader {
 	boolean  load(TransactionBase tb);
-	void setWebServiceAPI(WebServiceAPI _webServiceAPI) throws LoaderException;
+	void setWebServiceAPI(AAWebServiceAPI _webServiceAPI) throws LoaderException;
 	
 }

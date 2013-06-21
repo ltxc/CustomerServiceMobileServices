@@ -28,7 +28,9 @@ public class TemplateLoaderFactory {
 		switch(type)
 		{
 			case MRC:loader = new MiscTemplateLoader(); break;
-			case DRC:loader = new NonMiscTemplateLoader(); break;
+			case DRCCREATERC:loader = new ReceiveDRCCreateRCTemplateLoader(); break;
+			case DRC:loader = new ReceiveDRCTemplateLoader(); break;
+			case DRCCLOSERC:loader = new ReceiveDRCCloseRCTemplateLoader(); break;
 			case RRFV:loader = new NonMiscTemplateLoader(); break;
 			case RFR:loader = new NonMiscTemplateLoader(); break;
 			case PICK:loader = new ShippingCreationTemplateLoader();break;

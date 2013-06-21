@@ -86,11 +86,10 @@ public class TransactionService {
 			// first find whether there is one
 
 			boolean isLoad = false;
-			TransactionBase tbExist = transactionService
-					.searchExistingTransaction(transaction);
+			TransactionBase tbExist = transaction.searchTransactionByIPADID(transaction.getIpad_id());
 
 			// check the aciton code, if 0, only return the process status
-			if (transaction.getProcessActionCode() == 1) {
+			if (transaction.getProcessActionCode() == 0) {
 				String message = "No record has been found for this transaction. Please submit it again...";
 				//check status
 				if(tbExist!=null)
@@ -135,15 +134,18 @@ public class TransactionService {
 
 				if (isLoad) {
 					transactionService.preLoad(transaction, pr);
-
+					if(transaction.getCreatedDate()==null)
+						transaction.setCreatedDate(process_date);
+					if(transaction.getProcessDate()==null)
+						transaction.setProcessDate(process_date);
 					// load now
 					ILoader loader = LoaderFactory.get().getLoader(
 							transaction.getTransactionType());
 					if (loader != null) {
 						// create transaction
-
-						loader.load(transaction);
-						transaction.update();
+						//At this point, transaction is always new in the database. First call should be persist.
+						loader.load(transaction); 
+						transaction.update(); 
 						pr.setProcess_status(transaction.getProcessStatus());
 						pr.setProcess_message(transaction.getProcessMessage());
 

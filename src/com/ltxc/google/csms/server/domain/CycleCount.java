@@ -38,6 +38,9 @@ public class CycleCount implements Serializable {
 	@Column(name="cycle_type")
 	private String cycleType;
 
+	@Column(name="originalid")
+	private int originalid=0;
+	
     @Temporal( TemporalType.TIMESTAMP)
 	private Date lastupdated;
 
@@ -64,7 +67,7 @@ public class CycleCount implements Serializable {
     }
 
     //for bin count
-    public CycleCount(String warehouse_id, String bin_code_id, String who, CycleCountCount count)
+    public CycleCount(String warehouse_id, String bin_code_id, String who, CycleCountCount count, int originalid)
     {
     	this.cycleType = SharedConstants.CYCLE_TYPE_BIN;
     	this.warehouseId = warehouse_id;
@@ -73,10 +76,11 @@ public class CycleCount implements Serializable {
     	this.bpartId = count.getTarget();
     	this.qty = count.getQty();
     	this.comment = count.getComment();
+    	this.originalid = originalid;
     }
     
     //for part count
-    public CycleCount(String warehouse_id, String bin_code_id, String bpart_id,String who,  CycleCountCount count)
+    public CycleCount(String warehouse_id, String bin_code_id, String bpart_id,String who,  CycleCountCount count, int originalid)
     {
     	this.cycleType = SharedConstants.CYCLE_TYPE_PART;
     	this.warehouseId = warehouse_id;
@@ -89,6 +93,7 @@ public class CycleCount implements Serializable {
     	else
     		this.qty = count.getQty();
     	this.comment = count.getComment();
+    	this.originalid = originalid;
     }
     
 	public String getId() {
@@ -184,10 +189,20 @@ public class CycleCount implements Serializable {
   //default constructor is required. Don't delete it.
   
   
-  	public String getComment() {
+
+
+	public String getComment() {
 		return comment;
 	}
 
+
+	public int getOriginalid() {
+		return originalid;
+	}
+
+	public void setOriginalid(int originalid) {
+		this.originalid = originalid;
+	}
 
 	public void setComment(String comment) {
 		this.comment = comment;

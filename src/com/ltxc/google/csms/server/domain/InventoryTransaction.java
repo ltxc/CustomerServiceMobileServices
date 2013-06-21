@@ -1,16 +1,10 @@
 package com.ltxc.google.csms.server.domain;
 
-import java.io.InputStream;
-import java.io.Serializable;
-import java.io.StringWriter;
 
+import java.io.Serializable;
 import javax.persistence.*;
 import javax.xml.bind.Unmarshaller;
 import javax.xml.bind.annotation.XmlRootElement;
-
-import org.apache.commons.io.IOUtils;
-import org.eclipse.persistence.oxm.annotations.XmlInverseReference;
-
 import com.ltxc.google.csms.server.servlet.utils.EMFCSMOBILE;
 import com.ltxc.google.csms.shared.SharedConstants;
 import com.ltxc.google.csms.shared.StringHelper;
@@ -115,6 +109,12 @@ public class InventoryTransaction implements Serializable, TransactionBase {
     @Transient
     //0 - check process status, 1 - process
     private int actioncode = 1; 
+    
+    @Transient
+    private String outputrefno;
+    
+    @Transient
+    private int undeliveredlinecount = 0;
 	
 	//bi-directional many-to-one association to InventoryLineItem
 
@@ -346,6 +346,26 @@ public class InventoryTransaction implements Serializable, TransactionBase {
 	public void setActioncode(int actioncode) {
 		this.actioncode = actioncode;
 	}
+	
+
+
+	public String getOutputrefno() {
+		return outputrefno;
+	}
+
+	public void setOutputrefno(String outputrefno) {
+		this.outputrefno = outputrefno;
+	}
+	
+	
+
+	public int getUndeliveredlinecount() {
+		return undeliveredlinecount;
+	}
+
+	public void setUndeliveredlinecount(int undeliveredlinecount) {
+		this.undeliveredlinecount = undeliveredlinecount;
+	}
 
 	public String getXmldoc() {
 		return xmldoc;
@@ -368,27 +388,28 @@ public class InventoryTransaction implements Serializable, TransactionBase {
 
 		maps.put(SharedConstants.Attribute_Inventory_No_Of_Package, no_of_packages>=0?new Integer(no_of_packages):new Integer(0));
 
-
 		maps.put(SharedConstants.Attribute_Inventory_Weight, weight>0?new Float(weight):new Float(0));
-
 		
 		maps.put(SharedConstants.Attribute_Inventory_Ship_Instructions, ship_instructions!=null?ship_instructions:"");
-		
-		
+			
 		maps.put(SharedConstants.Attribute_Inventory_Ref_Doc_Type_Id, ref_doc_type_id!=null?ref_doc_type_id:"");
-		
 		
 		maps.put(SharedConstants.Attribute_Inventory_To_Warehouse_ID, to_warehouse!=null?to_warehouse.getWarehouse_id():"");
 		
 		maps.put(SharedConstants.Attribute_Inventory_To_Company_ID, company!=null?company.getCompany_id():"");
+		
 		maps.put(SharedConstants.Attribute_Inventory_Fr_Company_ID, company!=null?company.getCompany_id():"");
 		
 		maps.put(SharedConstants.Attribute_Inventory_Shipped_By, created_by!=null?created_by:"");
+		
 		maps.put(SharedConstants.Attribute_Inventory_Received_By, created_by!=null?created_by:"");
 		
 		maps.put(SharedConstants.Attribute_Inventory_PDF_Attachment, pdf_attachment!=null?pdf_attachment:"");
 
+		//output of stored procedure calls
+		maps.put(SharedConstants.Attribute_Inventory_OUTPUTREFNO, outputrefno!=null?outputrefno:"");
 
+		
 		return maps;
 	}
 
@@ -669,6 +690,34 @@ public class InventoryTransaction implements Serializable, TransactionBase {
 		return this.actioncode;
 	}
 
+	@Override
+	public Date getCreatedDate() {
+		
+		return this.created_date;
+	}
+
+
+
+	@Override
+	public void setCreatedDate(Date date) {
+		this.created_date = date;
+	}
+
+	@Override
+	public void setProcessDate(Date date) {
+		this.process_date = date;
+	}
+
+	@Override
+	public void setProcessActionCode(int actioncode) {
+		this.actioncode = actioncode;
+		
+	}
+
+	@Override
+	public TransactionBase searchTransactionByIPADID(String ipadid) {
+		return InventoryTransaction.findInventoryTransactionByIPadID(ipadid);
+	}	
 
   
 	

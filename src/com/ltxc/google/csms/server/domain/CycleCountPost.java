@@ -1,6 +1,7 @@
 package com.ltxc.google.csms.server.domain;
 
 import java.io.Serializable;
+import java.util.Date;
 import java.util.List;
 import javax.xml.bind.annotation.XmlRootElement;
 
@@ -18,6 +19,8 @@ public class CycleCountPost implements Serializable {
 	private String bpartId;
 	private String cycleType;
 	private String isclear = "true";
+	private int server_id;
+	
 	private List<CycleCountCount> counts;
 	public String getWho() {
 		return who;
@@ -61,9 +64,12 @@ public class CycleCountPost implements Serializable {
 	public void setCounts(List<CycleCountCount> counts) {
 		this.counts = counts;
 	}
-	
+	public int getServer_id() {
+		return server_id;
+	}
+	public void setServer_id(int server_id) {
+		this.server_id = server_id;
+	}
 
-	
-	
 	
 }

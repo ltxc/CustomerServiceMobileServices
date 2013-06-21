@@ -9,8 +9,8 @@ import org.junit.Test;
 
 
 import com.ltxc.google.csms.server.aa.api.WebServiceSoap;
-import com.ltxc.google.csms.server.service.WebServiceAPI;
-import com.ltxc.google.csms.server.service.WebServiceAPIFactory;
+import com.ltxc.google.csms.server.service.AAWebServiceAPI;
+import com.ltxc.google.csms.server.service.AAWebServiceAPIFactory;
 
 
 public class TestAAAPIWebService {
@@ -18,10 +18,10 @@ public class TestAAAPIWebService {
 	@Test
 	public void test() {
 		try{
-		final WebServiceAPI webServiceAPI = WebServiceAPIFactory.get().init().getWebServiceAPI();
+		final AAWebServiceAPI webServiceAPI = AAWebServiceAPIFactory.get().init().getWebServiceAPI();
 		if(webServiceAPI!=null)
 		{
-			webServiceAPI.serviceCall(new WebServiceAPI.WebServiceAPIDelegate() {
+			webServiceAPI.serviceCall(new AAWebServiceAPI.WebServiceAPIDelegate() {
 				
 
 				@Override
